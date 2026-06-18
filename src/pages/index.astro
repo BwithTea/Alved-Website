@@ -4,33 +4,22 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Home">
 
-  <!-- ====== HERO ====== -->
+  <!-- HERO -->
   <section class="hero" aria-label="Welcome to Alved">
     <div class="hero-bg" aria-hidden="true">
-      <img 
-        src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1600&q=80" 
-        alt=""
-        class="hero-img"
-        fetchpriority="high"
-      />
+      <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1600&q=80" alt="" class="hero-img" fetchpriority="high" />
       <div class="hero-overlay"></div>
     </div>
-
     <div class="wrap hero-content">
       <div class="hero-text reveal">
         <span class="eyebrow">Indiana Medicaid Waiver Provider</span>
         <h1>Helping People<br/>Live, Grow,<br/>and Belong.</h1>
-        <p class="lead">
-          Alved provides caring, individualized support that helps people 
-          with intellectual and developmental disabilities build skills, 
-          gain independence, and belong in their communities.
-        </p>
+        <p class="lead">Alved provides caring, individualized support that helps people with intellectual and developmental disabilities build skills, gain independence, and belong in their communities.</p>
         <div class="btn-row">
-          <a href="/services" class="btn btn-primary">See Our Services</a>
+          <a href="/services" class="btn btn-gold">See Our Services</a>
           <a href="/contact" class="btn btn-ghost-light">Get Started</a>
         </div>
       </div>
-
       <div class="hero-card reveal reveal--delay" aria-label="Approved waiver services">
         <span class="card-tag">Approved Waiver Services</span>
         <p>Alved is a CQL-accredited provider for:</p>
@@ -45,17 +34,39 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </div>
     </div>
-
-    <div class="hero-scroll" aria-hidden="true">
-      <span></span>
-    </div>
+    <div class="hero-scroll" aria-hidden="true"><span></span></div>
   </section>
 
-  <!-- ====== MISSION STRIP ====== -->
+  <!-- STATS BAR -->
+  <div class="stats-bar" aria-label="About Alved at a glance">
+    <div class="wrap stats-inner">
+      <div class="stat">
+        <strong>3</strong>
+        <span>Approved Waiver Programs</span>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat">
+        <strong>CQL</strong>
+        <span>Independently Accredited</span>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat">
+        <strong>BDDS</strong>
+        <span>State Approved Provider</span>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat">
+        <strong>Indiana</strong>
+        <span>Serving Indianapolis & Surrounding Areas</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MISSION STRIP -->
   <section class="mission-strip" aria-label="Our mission">
     <div class="wrap mission-inner reveal">
       <div class="mission-item">
-        <span class="mission-icon" aria-hidden="true">🌟</span>
+        <div class="mission-icon-wrap" aria-hidden="true">🌟</div>
         <div>
           <strong>Independence</strong>
           <p>Building life skills that last</p>
@@ -63,7 +74,7 @@ import Layout from '../layouts/Layout.astro';
       </div>
       <div class="mission-divider" aria-hidden="true"></div>
       <div class="mission-item">
-        <span class="mission-icon" aria-hidden="true">🤝</span>
+        <div class="mission-icon-wrap" aria-hidden="true">🤝</div>
         <div>
           <strong>Dignity</strong>
           <p>Respecting every individual's rights</p>
@@ -71,7 +82,7 @@ import Layout from '../layouts/Layout.astro';
       </div>
       <div class="mission-divider" aria-hidden="true"></div>
       <div class="mission-item">
-        <span class="mission-icon" aria-hidden="true">🏘️</span>
+        <div class="mission-icon-wrap" aria-hidden="true">🏘️</div>
         <div>
           <strong>Belonging</strong>
           <p>Connected to community life</p>
@@ -80,40 +91,34 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- ====== ABOUT PREVIEW ====== -->
+  <!-- ABOUT PREVIEW -->
   <section class="about-preview" aria-labelledby="about-heading">
+    <div class="about-bg-shape" aria-hidden="true"></div>
     <div class="wrap about-inner">
       <div class="about-text reveal">
         <span class="eyebrow">Who We Are</span>
         <h2 id="about-heading">Light and strength, together.</h2>
-        <p>
-          The name Alved carries meaning. <strong>Alva</strong> — light, clarity, and hope. 
-          <strong>Edith</strong> — blessed strength and resilience. Together they reflect 
-          exactly how we show up for every individual and family we serve.
-        </p>
-        <p>
-          We are a person-centered Medicaid waiver provider based in Indiana, 
-          dedicated to helping individuals with intellectual and developmental 
-          disabilities live full, meaningful lives — on their own terms.
-        </p>
+        <p>The name Alved carries meaning. <strong>Alva</strong> — light, clarity, and hope. <strong>Edith</strong> — blessed strength and resilience. Together they reflect exactly how we show up for every individual and family we serve.</p>
+        <p>We are a person-centered Medicaid waiver provider based in Indiana, dedicated to helping individuals with intellectual and developmental disabilities live full, meaningful lives — on their own terms.</p>
         <a href="/about" class="btn btn-primary">Learn About Alved</a>
       </div>
-      <div class="about-visual reveal reveal--delay" aria-hidden="true">
-        <div class="visual-card">
-          <div class="visual-mark">
-            <div class="mark-sun"></div>
-            <div class="mark-shield"></div>
+      <div class="about-visual reveal reveal--delay">
+        <div class="visual-img-wrap">
+          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80" alt="A support professional working one-on-one with an individual" />
+          <div class="visual-quote-card" aria-hidden="true">
+            <div class="vq-marks">
+              <div class="vq-sun"></div>
+              <div class="vq-shield"></div>
+            </div>
+            <p>"Every individual deserves the opportunity to shine."</p>
+            <cite>Alved Brand Promise</cite>
           </div>
-          <blockquote>
-            "We believe every individual deserves the opportunity to shine."
-          </blockquote>
-          <cite>— Alved Brand Promise</cite>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ====== PHOTO SHOWCASE ====== -->
+  <!-- PHOTO SHOWCASE -->
   <section class="showcase" aria-labelledby="showcase-heading">
     <div class="wrap">
       <div class="section-head reveal">
@@ -121,109 +126,95 @@ import Layout from '../layouts/Layout.astro';
         <h2 id="showcase-heading">Making a difference every day</h2>
         <p>A look at the support, connections, and community moments we help create.</p>
       </div>
-
       <div class="photo-grid">
-
         <article class="photo-card reveal">
           <div class="photo-wrap">
-            <img 
-              src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=800&q=80" 
-              alt="A support professional working alongside an individual in the community"
-              loading="lazy"
-            />
+            <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=800&q=80" alt="A support professional working alongside an individual in the community" loading="lazy" />
           </div>
           <div class="photo-caption">
             <h3>Community Support</h3>
             <p>Our Direct Support Professionals meet individuals where they are — at home, at work, and out in the community.</p>
           </div>
         </article>
-
         <article class="photo-card reveal reveal--delay">
           <div class="photo-wrap">
-            <img 
-              src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=800&q=80" 
-              alt="Group of individuals participating in a community activity together"
-              loading="lazy"
-            />
+            <img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=800&q=80" alt="Group of individuals participating in a community activity" loading="lazy" />
           </div>
           <div class="photo-caption">
             <h3>Building Connections</h3>
             <p>We actively support meaningful participation in relationships and activities chosen by each individual.</p>
           </div>
         </article>
-
         <article class="photo-card reveal reveal--delay-2">
           <div class="photo-wrap">
-            <img 
-              src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80" 
-              alt="Support professional and individual working together on a skill"
-              loading="lazy"
-            />
+            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80" alt="Support professional and individual working together on a skill" loading="lazy" />
           </div>
           <div class="photo-caption">
             <h3>Skill Building</h3>
             <p>Every session is focused on helping individuals gain new skills and grow more independent over time.</p>
           </div>
         </article>
-
         <article class="photo-card reveal reveal--delay-3">
           <div class="photo-wrap">
-            <img 
-              src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80" 
-              alt="Families and individuals together at a community gathering"
-              loading="lazy"
-            />
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80" alt="Families and individuals together at a community gathering" loading="lazy" />
           </div>
           <div class="photo-caption">
             <h3>Family & Community</h3>
-            <p>We work alongside families and support teams to make sure every individual feels valued and included.</p>
+            <p>We work alongside families to make sure every individual feels valued and included.</p>
           </div>
         </article>
-
       </div>
     </div>
   </section>
 
-  <!-- ====== SERVICES PREVIEW ====== -->
+  <!-- SERVICES PREVIEW -->
   <section class="services-preview" aria-labelledby="services-heading">
+    <div class="services-bg-shape" aria-hidden="true"></div>
     <div class="wrap">
       <div class="section-head reveal">
         <span class="eyebrow">Our Services</span>
         <h2 id="services-heading">Support built around each person</h2>
         <p>Every service is individualized and planned together with the individual, their family, and their support team.</p>
       </div>
-
       <div class="services-grid" role="list">
         <article class="service-card reveal" role="listitem">
-          <span class="abbr" aria-label="Residential Habilitation and Support">RHS</span>
-          <h3>Residential Habilitation & Support</h3>
-          <p>Daily living and skill-building support at home or in a residential setting.</p>
+          <div class="service-card-inner">
+            <span class="abbr" aria-label="Residential Habilitation and Support">RHS</span>
+            <h3>Residential Habilitation & Support</h3>
+            <p>Daily living and skill-building support at home or in a residential setting.</p>
+          </div>
         </article>
         <article class="service-card reveal reveal--delay" role="listitem">
-          <span class="abbr" aria-label="Community Integration Habilitation">CIH</span>
-          <h3>Community Integration Habilitation</h3>
-          <p>Skill-building and community support on the individual's own terms.</p>
+          <div class="service-card-inner">
+            <span class="abbr" aria-label="Community Integration Habilitation">CIH</span>
+            <h3>Community Integration Habilitation</h3>
+            <p>Skill-building and community support on the individual's own terms.</p>
+          </div>
         </article>
         <article class="service-card reveal reveal--delay-2" role="listitem">
-          <span class="abbr" aria-label="Participant Assistance and Care">PAC</span>
-          <h3>Participant Assistance & Care</h3>
-          <p>Hands-on personal care and assistance with everyday activities.</p>
+          <div class="service-card-inner">
+            <span class="abbr" aria-label="Participant Assistance and Care">PAC</span>
+            <h3>Participant Assistance & Care</h3>
+            <p>Hands-on personal care and assistance with everyday activities.</p>
+          </div>
         </article>
         <article class="service-card reveal reveal--delay-3" role="listitem">
-          <span class="abbr" aria-label="Respite">RESP</span>
-          <h3>Respite</h3>
-          <p>Short-term relief care so families and caregivers can rest and recharge.</p>
+          <div class="service-card-inner">
+            <span class="abbr" aria-label="Respite">RESP</span>
+            <h3>Respite</h3>
+            <p>Short-term relief care so families and caregivers can rest and recharge.</p>
+          </div>
         </article>
       </div>
-
       <div class="services-cta reveal">
-        <a href="/services" class="btn btn-ghost">See All Services</a>
+        <a href="/services" class="btn btn-primary">See All Services</a>
       </div>
     </div>
   </section>
 
-  <!-- ====== CTA BANNER ====== -->
+  <!-- CTA BANNER -->
   <section class="cta-banner" aria-labelledby="cta-heading">
+    <div class="cta-bg-shape" aria-hidden="true"></div>
     <div class="wrap cta-inner reveal">
       <div>
         <h2 id="cta-heading">Ready to get started?</h2>
@@ -239,460 +230,112 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <style>
-  /* ====== HERO ====== */
-  .hero {
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-  }
-
-  .hero-bg {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-  }
-
-  .hero-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-
-  .hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      105deg,
-      rgba(20, 42, 69, 0.88) 0%,
-      rgba(31, 58, 95, 0.75) 50%,
-      rgba(31, 58, 95, 0.5) 100%
-    );
-  }
-
-  .hero-content {
-    position: relative;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 54px;
-    align-items: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-
-  .hero h1 {
-    font-size: clamp(2.8rem, 5.5vw, 4.2rem);
-    font-weight: 700;
-    line-height: 1.06;
-    color: var(--white);
-    margin-bottom: 22px;
-  }
-
+  /* HERO */
+  .hero { position: relative; min-height: 100vh; display: flex; align-items: center; overflow: hidden; }
+  .hero-bg { position: absolute; inset: 0; z-index: 0; }
+  .hero-img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+  .hero-overlay { position: absolute; inset: 0; background: linear-gradient(105deg, rgba(20,42,69,0.90) 0%, rgba(31,58,95,0.76) 50%, rgba(31,58,95,0.52) 100%); }
+  .hero-content { position: relative; z-index: 1; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 54px; align-items: center; padding-top: 100px; padding-bottom: 100px; }
+  .hero h1 { font-size: clamp(2.8rem, 5.5vw, 4.2rem); font-weight: 700; line-height: 1.06; color: var(--white); margin-bottom: 22px; }
   .hero .eyebrow { color: var(--gold-soft); }
-
-  .lead {
-    font-size: 1.15rem;
-    color: rgba(255,255,255,0.85);
-    max-width: 500px;
-    margin-bottom: 34px;
-    line-height: 1.7;
-  }
-
-  .btn-row {
-    display: flex;
-    gap: 14px;
-    flex-wrap: wrap;
-  }
-
-  .btn-gold {
-    background: var(--gold);
-    color: var(--navy-deep);
-    font-weight: 700;
-  }
+  .lead { font-size: 1.15rem; color: rgba(255,255,255,0.85); max-width: 500px; margin-bottom: 34px; line-height: 1.7; }
+  .btn-row { display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn-gold { background: var(--gold); color: var(--navy-deep); font-weight: 700; }
   .btn-gold:hover { background: #a07820; transform: translateY(-1px); }
+  .btn-ghost-light { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.6); font-weight: 700; }
+  .btn-ghost-light:hover { background: rgba(255,255,255,0.12); color: var(--white); transform: translateY(-1px); }
+  .hero-card { background: rgba(255,255,255,0.1); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border: 1px solid rgba(255,255,255,0.2); border-radius: var(--radius); padding: 32px; }
+  .card-tag { display: inline-block; background: var(--gold); color: var(--navy-deep); font-size: 0.78rem; font-weight: 700; padding: 5px 12px; border-radius: 20px; margin-bottom: 16px; }
+  .hero-card > p { color: rgba(255,255,255,0.82); margin-bottom: 14px; }
+  .check-list { list-style: none; display: grid; gap: 10px; margin-bottom: 22px; }
+  .check-list li { display: flex; gap: 10px; color: var(--white); font-size: 0.95rem; }
+  .check-list li::before { content: "✓"; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+  .card-badges { display: flex; gap: 8px; flex-wrap: wrap; }
+  .badge { font-size: 0.75rem; font-weight: 700; color: var(--white); border: 1.5px solid rgba(255,255,255,0.4); border-radius: 20px; padding: 5px 12px; }
+  .hero-scroll { position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%); z-index: 1; }
+  .hero-scroll span { display: block; width: 2px; height: 48px; background: linear-gradient(to bottom, rgba(255,255,255,0.6), transparent); margin: 0 auto; animation: scrollLine 2s ease-in-out infinite; }
+  @keyframes scrollLine { 0% { opacity: 0; transform: scaleY(0); transform-origin: top; } 50% { opacity: 1; transform: scaleY(1); transform-origin: top; } 100% { opacity: 0; transform: scaleY(1); transform-origin: bottom; } }
 
-  .btn-ghost-light {
-    background: transparent;
-    color: var(--white);
-    border: 2px solid rgba(255,255,255,0.6);
-    font-weight: 700;
-  }
-  .btn-ghost-light:hover {
-    background: rgba(255,255,255,0.12);
-    color: var(--white);
-    transform: translateY(-1px);
-  }
+  /* STATS BAR */
+  .stats-bar { background: var(--navy-deep); padding: 22px 0; border-bottom: 3px solid var(--gold); }
+  .stats-inner { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; }
+  .stat { text-align: center; padding: 10px 40px; flex: 1; min-width: 160px; }
+  .stat strong { display: block; font-family: var(--font-head); font-size: 1.5rem; color: var(--gold); margin-bottom: 4px; }
+  .stat span { font-size: 0.8rem; color: rgba(255,255,255,0.7); line-height: 1.4; }
+  .stat-divider { width: 1px; height: 40px; background: rgba(255,255,255,0.15); flex-shrink: 0; }
 
-  /* Hero card */
-  .hero-card {
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: var(--radius);
-    padding: 32px;
-  }
+  /* MISSION STRIP */
+  .mission-strip { background: var(--white); border-bottom: 1px solid var(--border); padding: 40px 0; }
+  .mission-inner { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; }
+  .mission-item { display: flex; align-items: center; gap: 16px; padding: 16px 40px; flex: 1; min-width: 200px; justify-content: center; }
+  .mission-icon-wrap { font-size: 2rem; flex-shrink: 0; width: 54px; height: 54px; border-radius: 14px; background: var(--gold-soft); display: flex; align-items: center; justify-content: center; }
+  .mission-item strong { display: block; font-family: var(--font-head); color: var(--navy); font-size: 1.05rem; }
+  .mission-item p { color: var(--ink-soft); font-size: 0.88rem; margin: 0; }
+  .mission-divider { width: 1px; height: 50px; background: var(--border); flex-shrink: 0; }
 
-  .card-tag {
-    display: inline-block;
-    background: var(--gold);
-    color: var(--navy-deep);
-    font-size: 0.78rem;
-    font-weight: 700;
-    padding: 5px 12px;
-    border-radius: 20px;
-    margin-bottom: 16px;
-  }
-
-  .hero-card > p {
-    color: rgba(255,255,255,0.82);
-    margin-bottom: 14px;
-  }
-
-  .check-list {
-    list-style: none;
-    display: grid;
-    gap: 10px;
-    margin-bottom: 22px;
-  }
-  .check-list li {
-    display: flex;
-    gap: 10px;
-    color: var(--white);
-    font-size: 0.95rem;
-  }
-  .check-list li::before {
-    content: "✓";
-    color: var(--gold);
-    font-weight: 700;
-    flex-shrink: 0;
-  }
-
-  .card-badges {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-  }
-  .badge {
-    font-size: 0.75rem;
-    font-weight: 700;
-    color: var(--white);
-    border: 1.5px solid rgba(255,255,255,0.4);
-    border-radius: 20px;
-    padding: 5px 12px;
-  }
-
-  /* Scroll indicator */
-  .hero-scroll {
-    position: absolute;
-    bottom: 32px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-  }
-  .hero-scroll span {
-    display: block;
-    width: 2px;
-    height: 48px;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.6), transparent);
-    margin: 0 auto;
-    animation: scrollLine 2s ease-in-out infinite;
-  }
-  @keyframes scrollLine {
-    0% { opacity: 0; transform: scaleY(0); transform-origin: top; }
-    50% { opacity: 1; transform: scaleY(1); transform-origin: top; }
-    100% { opacity: 0; transform: scaleY(1); transform-origin: bottom; }
-  }
-
-  /* ====== MISSION STRIP ====== */
-  .mission-strip {
-    background: var(--white);
-    border-bottom: 1px solid var(--border);
-    padding: 36px 0;
-  }
-
-  .mission-inner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .mission-item {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    padding: 16px 40px;
-    flex: 1;
-    min-width: 200px;
-    justify-content: center;
-  }
-
-  .mission-icon { font-size: 1.8rem; flex-shrink: 0; }
-
-  .mission-item strong {
-    display: block;
-    font-family: var(--font-head);
-    color: var(--navy);
-    font-size: 1.05rem;
-  }
-
-  .mission-item p {
-    color: var(--ink-soft);
-    font-size: 0.88rem;
-    margin: 0;
-  }
-
-  .mission-divider {
-    width: 1px;
-    height: 50px;
-    background: var(--border);
-    flex-shrink: 0;
-  }
-
-  /* ====== ABOUT PREVIEW ====== */
-  .about-preview { padding: var(--section-pad) 0; }
-
-  .about-inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
-  }
-
-  .about-text h2 {
-    font-size: clamp(1.8rem, 3vw, 2.4rem);
-    margin-bottom: 18px;
-  }
-
-  .about-text p {
-    color: var(--ink-soft);
-    margin-bottom: 16px;
-  }
-
+  /* ABOUT PREVIEW */
+  .about-preview { padding: var(--section-pad) 0; position: relative; overflow: hidden; }
+  .about-bg-shape { position: absolute; top: -120px; right: -120px; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(184,144,44,0.07) 0%, transparent 70%); pointer-events: none; }
+  .about-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; position: relative; z-index: 1; }
+  .about-text h2 { font-size: clamp(1.8rem, 3vw, 2.4rem); margin-bottom: 18px; }
+  .about-text p { color: var(--ink-soft); margin-bottom: 16px; }
   .about-text .btn { margin-top: 8px; }
+  .btn-primary { background: var(--navy); color: var(--white); font-weight: 700; }
+  .btn-primary:hover { background: var(--navy-deep); transform: translateY(-1px); }
+  .visual-img-wrap { position: relative; border-radius: var(--radius); overflow: hidden; }
+  .visual-img-wrap img { width: 100%; height: 380px; object-fit: cover; display: block; }
+  .visual-quote-card { position: absolute; bottom: 20px; left: 20px; right: 20px; background: rgba(20,42,69,0.92); backdrop-filter: blur(8px); border-radius: 10px; padding: 20px 22px; }
+  .vq-marks { display: flex; gap: 10px; margin-bottom: 12px; }
+  .vq-sun { width: 18px; height: 18px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 3px rgba(184,144,44,0.3); }
+  .vq-shield { width: 16px; height: 20px; border: 2px solid rgba(255,255,255,0.5); border-radius: 3px 3px 8px 8px; }
+  .visual-quote-card p { font-family: var(--font-head); font-size: 0.95rem; color: var(--white); margin-bottom: 8px; line-height: 1.5; }
+  .visual-quote-card cite { font-size: 0.78rem; color: var(--gold-soft); font-style: normal; }
 
-  .visual-card {
-    background: var(--navy);
-    border-radius: var(--radius);
-    padding: 40px;
-    color: var(--white);
-    position: relative;
-    overflow: hidden;
-  }
-
-  .visual-card::before {
-    content: '';
-    position: absolute;
-    top: -40px;
-    right: -40px;
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    background: rgba(184,144,44,0.15);
-  }
-
-  .visual-mark {
-    display: flex;
-    gap: 12px;
-    margin-bottom: 28px;
-  }
-
-  .mark-sun {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background: var(--gold);
-    box-shadow: 0 0 0 5px rgba(184,144,44,0.25);
-  }
-
-  .mark-shield {
-    width: 28px;
-    height: 32px;
-    border: 3px solid rgba(255,255,255,0.5);
-    border-radius: 4px 4px 12px 12px;
-  }
-
-  blockquote {
-    font-family: var(--font-head);
-    font-size: 1.2rem;
-    line-height: 1.5;
-    color: var(--white);
-    margin-bottom: 16px;
-    position: relative;
-    z-index: 1;
-  }
-
-  cite {
-    color: var(--gold-soft);
-    font-size: 0.88rem;
-    font-style: normal;
-  }
-
-  /* ====== PHOTO SHOWCASE ====== */
-  .showcase {
-    padding: var(--section-pad) 0;
-    background: var(--bg-alt);
-  }
-
-  .section-head {
-    max-width: 620px;
-    margin-bottom: 44px;
-  }
-
-  .section-head h2 {
-    font-size: clamp(1.6rem, 3vw, 2.2rem);
-    margin-bottom: 10px;
-  }
-
+  /* PHOTO SHOWCASE */
+  .showcase { padding: var(--section-pad) 0; background: var(--bg-alt); }
+  .section-head { max-width: 620px; margin-bottom: 44px; }
+  .section-head h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 10px; }
   .section-head p { color: var(--ink-soft); }
+  .photo-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .photo-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; transition: transform 0.25s ease, box-shadow 0.25s ease; }
+  .photo-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px -12px rgba(31,58,95,0.22); }
+  .photo-wrap { width: 100%; aspect-ratio: 4/3; overflow: hidden; }
+  .photo-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; display: block; }
+  .photo-card:hover .photo-wrap img { transform: scale(1.05); }
+  .photo-caption { padding: 20px; }
+  .photo-caption h3 { font-size: 1rem; margin-bottom: 8px; color: var(--navy); }
+  .photo-caption p { font-size: 0.88rem; color: var(--ink-soft); margin: 0; line-height: 1.55; }
 
-  .photo-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-  }
-
-  .photo-card {
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    overflow: hidden;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-  }
-
-  .photo-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 16px 40px -12px rgba(31,58,95,0.22);
-  }
-
-  .photo-wrap {
-    width: 100%;
-    aspect-ratio: 4/3;
-    overflow: hidden;
-  }
-
-  .photo-wrap img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.4s ease;
-  }
-
-  .photo-card:hover .photo-wrap img {
-    transform: scale(1.04);
-  }
-
-  .photo-caption {
-    padding: 20px;
-  }
-
-  .photo-caption h3 {
-    font-size: 1rem;
-    margin-bottom: 8px;
-    color: var(--navy);
-  }
-
-  .photo-caption p {
-    font-size: 0.88rem;
-    color: var(--ink-soft);
-    margin: 0;
-    line-height: 1.55;
-  }
-
-  /* ====== SERVICES PREVIEW ====== */
-  .services-preview {
-    padding: var(--section-pad) 0;
-  }
-
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 18px;
-    margin-bottom: 36px;
-  }
-
-  .service-card {
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-top: 4px solid var(--navy);
-    border-radius: var(--radius);
-    padding: 28px 22px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-
-  .service-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 30px -10px rgba(31,58,95,0.2);
-  }
-
-  .abbr {
-    display: block;
-    font-family: var(--font-head);
-    font-weight: 700;
-    color: var(--navy);
-    font-size: 1.5rem;
-    margin-bottom: 8px;
-  }
-
-  .service-card h3 {
-    font-size: 1rem;
-    margin-bottom: 8px;
-    color: var(--ink);
-  }
-
-  .service-card p {
-    font-size: 0.92rem;
-    color: var(--ink-soft);
-    margin: 0;
-  }
-
+  /* SERVICES PREVIEW */
+  .services-preview { padding: var(--section-pad) 0; background: var(--bg); position: relative; overflow: hidden; }
+  .services-bg-shape { position: absolute; bottom: -100px; left: -100px; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(31,58,95,0.05) 0%, transparent 70%); pointer-events: none; }
+  .services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-bottom: 36px; }
+  .service-card { background: var(--white); border: 1px solid var(--border); border-left: 5px solid var(--gold); border-radius: var(--radius); overflow: hidden; position: relative; transition: transform 0.25s ease, box-shadow 0.25s ease; }
+  .service-card::before { content: ''; position: absolute; top: -30px; right: -30px; width: 100px; height: 100px; border-radius: 50%; background: rgba(184,144,44,0.06); transition: transform 0.4s ease; pointer-events: none; }
+  .service-card:hover::before { transform: scale(2.5); }
+  .service-card:hover { transform: translateY(-3px); box-shadow: 0 12px 32px -8px rgba(31,58,95,0.15); }
+  .service-card-inner { padding: 28px 22px; }
+  .abbr { display: block; font-family: var(--font-head); font-weight: 700; color: var(--navy); font-size: 1.5rem; margin-bottom: 8px; }
+  .service-card h3 { font-size: 1rem; margin-bottom: 8px; color: var(--ink); }
+  .service-card p { font-size: 0.92rem; color: var(--ink-soft); margin: 0; }
   .services-cta { text-align: center; }
 
-  /* ====== CTA BANNER ====== */
-  .cta-banner {
-    background: var(--navy);
-    padding: 64px 0;
-  }
-
-  .cta-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    flex-wrap: wrap;
-  }
-
-  .cta-banner h2 {
-    color: var(--white);
-    font-size: clamp(1.6rem, 3vw, 2rem);
-    margin-bottom: 8px;
-  }
-
+  /* CTA BANNER */
+  .cta-banner { background: var(--navy); padding: 64px 0; position: relative; overflow: hidden; }
+  .cta-bg-shape { position: absolute; top: -80px; right: -80px; width: 400px; height: 400px; border-radius: 50%; background: rgba(184,144,44,0.08); pointer-events: none; }
+  .cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 30px; flex-wrap: wrap; position: relative; z-index: 1; }
+  .cta-banner h2 { color: var(--white); font-size: clamp(1.6rem, 3vw, 2rem); margin-bottom: 8px; }
   .cta-banner p { color: rgba(255,255,255,0.75); }
+  .cta-btns { display: flex; gap: 14px; flex-wrap: wrap; flex-shrink: 0; }
 
-  .cta-btns {
-    display: flex;
-    gap: 14px;
-    flex-wrap: wrap;
-    flex-shrink: 0;
-  }
-
-  /* ====== ANIMATIONS ====== */
-  .reveal {
-    opacity: 0;
-    transform: translateY(18px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-  }
+  /* ANIMATIONS */
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
   .reveal.in { opacity: 1; transform: none; }
   .reveal--delay   { transition-delay: 0.15s; }
   .reveal--delay-2 { transition-delay: 0.3s; }
   .reveal--delay-3 { transition-delay: 0.45s; }
 
-  /* ====== MOBILE ====== */
+  /* MOBILE */
   @media (max-width: 880px) {
     .hero-content { grid-template-columns: 1fr; }
     .about-inner  { grid-template-columns: 1fr; }
@@ -700,25 +343,19 @@ import Layout from '../layouts/Layout.astro';
     .services-grid { grid-template-columns: 1fr 1fr; }
     .cta-inner    { flex-direction: column; text-align: center; }
     .mission-divider { display: none; }
+    .stat-divider { display: none; }
   }
-
   @media (max-width: 540px) {
     .photo-grid    { grid-template-columns: 1fr; }
     .services-grid { grid-template-columns: 1fr; }
+    .stat { padding: 10px 20px; }
   }
 </style>
 
 <script>
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in');
-          observer.unobserve(entry.target);
-        }
-      });
-    },
+    (entries) => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); } }),
     { threshold: 0.08 }
   );
   reveals.forEach(el => observer.observe(el));
