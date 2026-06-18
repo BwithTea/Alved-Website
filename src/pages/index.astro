@@ -1,17 +1,604 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Home">
+
+  <!-- ====== HERO ====== -->
+  <section class="hero" aria-label="Welcome to Alved">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="wrap hero-content">
+      <div class="hero-text reveal">
+        <span class="eyebrow">Indiana Medicaid Waiver Provider</span>
+        <h1>Helping People<br/>Live, Grow,<br/>and Belong.</h1>
+        <p class="lead">
+          Alved provides caring, individualized support that helps people 
+          with intellectual and developmental disabilities build skills, 
+          gain independence, and belong in their communities.
+        </p>
+        <div class="btn-row">
+          <a href="/services" class="btn btn-primary">See Our Services</a>
+          <a href="/contact" class="btn btn-ghost">Get Started</a>
+        </div>
+      </div>
+
+      <div class="hero-card reveal reveal--delay" aria-label="Approved waiver services">
+        <span class="card-tag">Approved Waiver Services</span>
+        <p>Alved is a CQL-accredited provider for:</p>
+        <ul class="check-list" role="list">
+          <li>Community Integration Waiver</li>
+          <li>Family Support Waiver</li>
+          <li>Money Follows the Person Program</li>
+        </ul>
+        <div class="card-badges">
+          <span class="badge">BDDS Approved</span>
+          <span class="badge">CQL Accredited</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== MISSION STRIP ====== -->
+  <section class="mission-strip" aria-label="Our mission">
+    <div class="wrap mission-inner reveal">
+      <div class="mission-item">
+        <span class="mission-icon" aria-hidden="true">🌟</span>
+        <div>
+          <strong>Independence</strong>
+          <p>Building life skills that last</p>
+        </div>
+      </div>
+      <div class="mission-divider" aria-hidden="true"></div>
+      <div class="mission-item">
+        <span class="mission-icon" aria-hidden="true">🤝</span>
+        <div>
+          <strong>Dignity</strong>
+          <p>Respecting every individual's rights</p>
+        </div>
+      </div>
+      <div class="mission-divider" aria-hidden="true"></div>
+      <div class="mission-item">
+        <span class="mission-icon" aria-hidden="true">🏘️</span>
+        <div>
+          <strong>Belonging</strong>
+          <p>Connected to community life</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ABOUT PREVIEW ====== -->
+  <section class="about-preview" aria-labelledby="about-heading">
+    <div class="wrap about-inner">
+      <div class="about-text reveal">
+        <span class="eyebrow">Who We Are</span>
+        <h2 id="about-heading">Light and strength, together.</h2>
+        <p>
+          The name Alved carries meaning. <strong>Alva</strong> — light, clarity, and hope. 
+          <strong>Edith</strong> — blessed strength and resilience. Together they reflect 
+          exactly how we show up for every individual and family we serve.
+        </p>
+        <p>
+          We are a person-centered Medicaid waiver provider based in Indiana, 
+          dedicated to helping individuals with intellectual and developmental 
+          disabilities live full, meaningful lives — on their own terms.
+        </p>
+        <a href="/about" class="btn btn-primary">Learn About Alved</a>
+      </div>
+      <div class="about-visual reveal reveal--delay" aria-hidden="true">
+        <div class="visual-card">
+          <div class="visual-mark">
+            <div class="mark-sun"></div>
+            <div class="mark-shield"></div>
+          </div>
+          <blockquote>
+            "We believe every individual deserves the opportunity to shine."
+          </blockquote>
+          <cite>— Alved Brand Promise</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SERVICES PREVIEW ====== -->
+  <section class="services-preview" aria-labelledby="services-heading">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Our Services</span>
+        <h2 id="services-heading">Support built around each person</h2>
+        <p>Every service is individualized and planned together with the individual, their family, and their support team.</p>
+      </div>
+
+      <div class="services-grid" role="list">
+        <article class="service-card reveal" role="listitem">
+          <span class="abbr" aria-label="Residential Habilitation and Support">RHS</span>
+          <h3>Residential Habilitation & Support</h3>
+          <p>Daily living and skill-building support at home or in a residential setting.</p>
+        </article>
+        <article class="service-card reveal reveal--delay" role="listitem">
+          <span class="abbr" aria-label="Community Integration Habilitation">CIH</span>
+          <h3>Community Integration Habilitation</h3>
+          <p>Skill-building and community support on the individual's own terms.</p>
+        </article>
+        <article class="service-card reveal reveal--delay-2" role="listitem">
+          <span class="abbr" aria-label="Participant Assistance and Care">PAC</span>
+          <h3>Participant Assistance & Care</h3>
+          <p>Hands-on personal care and assistance with everyday activities.</p>
+        </article>
+        <article class="service-card reveal reveal--delay-3" role="listitem">
+          <span class="abbr" aria-label="Respite">RESP</span>
+          <h3>Respite</h3>
+          <p>Short-term relief care so families and caregivers can rest and recharge.</p>
+        </article>
+      </div>
+
+      <div class="services-cta reveal">
+        <a href="/services" class="btn btn-ghost">See All Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CTA BANNER ====== -->
+  <section class="cta-banner" aria-labelledby="cta-heading">
+    <div class="wrap cta-inner reveal">
+      <div>
+        <h2 id="cta-heading">Ready to get started?</h2>
+        <p>We're here to help you understand your options and take the next step.</p>
+      </div>
+      <div class="cta-btns">
+        <a href="/contact" class="btn btn-primary">Contact Us</a>
+        <a href="/waiver" class="btn btn-ghost btn-ghost--light">Learn About the Waiver</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* ====== HERO ====== */
+  .hero {
+    position: relative;
+    min-height: 92vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background: 
+      linear-gradient(155deg, var(--navy-deep) 0%, var(--navy) 60%, #2a5298 100%);
+    z-index: 0;
+  }
+
+  /* Subtle texture pattern */
+  .hero-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle at 20% 50%, rgba(184,144,44,0.15) 0%, transparent 50%),
+                      radial-gradient(circle at 80% 20%, rgba(255,255,255,0.05) 0%, transparent 40%);
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(20,42,69,0.3) 0%, transparent 100%);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 54px;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.6rem, 5vw, 4rem);
+    font-weight: 700;
+    line-height: 1.08;
+    color: var(--white);
+    margin-bottom: 22px;
+  }
+
+  .hero .eyebrow {
+    color: var(--gold-soft);
+  }
+
+  .lead {
+    font-size: 1.15rem;
+    color: rgba(255,255,255,0.85);
+    max-width: 500px;
+    margin-bottom: 32px;
+    line-height: 1.7;
+  }
+
+  .btn-row {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .hero .btn-primary {
+    background: var(--gold);
+    color: var(--navy-deep);
+  }
+  .hero .btn-primary:hover {
+    background: #a07820;
+  }
+
+  .hero .btn-ghost {
+    border-color: rgba(255,255,255,0.6);
+    color: var(--white);
+  }
+  .hero .btn-ghost:hover {
+    background: rgba(255,255,255,0.15);
+    color: var(--white);
+  }
+
+  /* Hero card */
+  .hero-card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: var(--radius);
+    padding: 32px;
+  }
+
+  .card-tag {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy-deep);
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+  }
+
+  .hero-card > p {
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 14px;
+  }
+
+  .check-list {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+    margin-bottom: 22px;
+  }
+  .check-list li {
+    display: flex;
+    gap: 10px;
+    color: var(--white);
+    font-size: 0.95rem;
+    align-items: flex-start;
+  }
+  .check-list li::before {
+    content: "✓";
+    color: var(--gold);
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .card-badges {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .badge {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--white);
+    border: 1.5px solid rgba(255,255,255,0.4);
+    border-radius: 20px;
+    padding: 5px 12px;
+  }
+
+  /* ====== MISSION STRIP ====== */
+  .mission-strip {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    padding: 36px 0;
+  }
+
+  .mission-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    flex-wrap: wrap;
+  }
+
+  .mission-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 40px;
+    flex: 1;
+    min-width: 200px;
+    justify-content: center;
+  }
+
+  .mission-icon {
+    font-size: 1.8rem;
+    flex-shrink: 0;
+  }
+
+  .mission-item strong {
+    display: block;
+    font-family: var(--font-head);
+    color: var(--navy);
+    font-size: 1.05rem;
+  }
+
+  .mission-item p {
+    color: var(--ink-soft);
+    font-size: 0.88rem;
+    margin: 0;
+  }
+
+  .mission-divider {
+    width: 1px;
+    height: 50px;
+    background: var(--border);
+    flex-shrink: 0;
+  }
+
+  /* ====== ABOUT PREVIEW ====== */
+  .about-preview {
+    padding: var(--section-pad) 0;
+  }
+
+  .about-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .about-text h2 {
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    margin-bottom: 18px;
+  }
+
+  .about-text p {
+    color: var(--ink-soft);
+    margin-bottom: 16px;
+  }
+
+  .about-text .btn {
+    margin-top: 8px;
+  }
+
+  .visual-card {
+    background: var(--navy);
+    border-radius: var(--radius);
+    padding: 40px;
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .visual-card::before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: rgba(184,144,44,0.15);
+  }
+
+  .visual-mark {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+
+  .mark-sun {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--gold);
+    box-shadow: 0 0 0 5px rgba(184,144,44,0.25);
+  }
+
+  .mark-shield {
+    width: 28px;
+    height: 32px;
+    border: 3px solid rgba(255,255,255,0.5);
+    border-radius: 4px 4px 12px 12px;
+  }
+
+  blockquote {
+    font-family: var(--font-head);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: var(--white);
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 1;
+  }
+
+  cite {
+    color: var(--gold-soft);
+    font-size: 0.88rem;
+    font-style: normal;
+  }
+
+  /* ====== SERVICES PREVIEW ====== */
+  .services-preview {
+    padding: var(--section-pad) 0;
+    background: var(--bg-alt);
+  }
+
+  .section-head {
+    max-width: 620px;
+    margin-bottom: 44px;
+  }
+
+  .section-head h2 {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    margin-bottom: 12px;
+  }
+
+  .section-head p {
+    color: var(--ink-soft);
+    font-size: 1.02rem;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 36px;
+  }
+
+  .service-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--navy);
+    border-radius: var(--radius);
+    padding: 28px 22px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .service-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px -10px rgba(31,58,95,0.2);
+  }
+
+  .abbr {
+    display: block;
+    font-family: var(--font-head);
+    font-weight: 700;
+    color: var(--navy);
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+
+  .service-card h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: var(--ink);
+  }
+
+  .service-card p {
+    font-size: 0.92rem;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
+  .services-cta {
+    text-align: center;
+  }
+
+  /* ====== CTA BANNER ====== */
+  .cta-banner {
+    background: var(--navy);
+    padding: 64px 0;
+  }
+
+  .cta-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .cta-banner h2 {
+    color: var(--white);
+    font-size: clamp(1.6rem, 3vw, 2rem);
+    margin-bottom: 8px;
+  }
+
+  .cta-banner p {
+    color: rgba(255,255,255,0.75);
+  }
+
+  .cta-btns {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+  }
+
+  .cta-banner .btn-primary {
+    background: var(--gold);
+    color: var(--navy-deep);
+  }
+
+  .btn-ghost--light {
+    border-color: rgba(255,255,255,0.5);
+    color: var(--white);
+  }
+  .btn-ghost--light:hover {
+    background: rgba(255,255,255,0.1);
+    color: var(--white);
+  }
+
+  /* ====== ANIMATIONS ====== */
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.in {
+    opacity: 1;
+    transform: none;
+  }
+  .reveal--delay  { transition-delay: 0.15s; }
+  .reveal--delay-2 { transition-delay: 0.3s; }
+  .reveal--delay-3 { transition-delay: 0.45s; }
+
+  /* ====== MOBILE ====== */
+  @media (max-width: 880px) {
+    .hero-content {
+      grid-template-columns: 1fr;
+    }
+    .about-inner {
+      grid-template-columns: 1fr;
+    }
+    .services-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    .cta-inner {
+      flex-direction: column;
+      text-align: center;
+    }
+    .mission-divider { display: none; }
+  }
+
+  @media (max-width: 540px) {
+    .services-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<script>
+  // Intersection observer for reveal animations
+  // Respects prefers-reduced-motion (handled in global.css)
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+  reveals.forEach(el => observer.observe(el));
+</script>
