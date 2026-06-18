@@ -1,0 +1,131 @@
+/* ============================================
+   ALVED — Global Design System
+   ============================================ */
+
+:root {
+  /* Colors */
+  --navy:        #1F3A5F;
+  --navy-deep:   #142A45;
+  --gold:        #B8902C;
+  --gold-soft:   #EDE0BC;
+  --bg:          #FBF8F2;
+  --bg-alt:      #E9EFF3;
+  --ink:         #2B2B27;
+  --ink-soft:    #5C5C54;
+  --white:       #FFFFFF;
+  --border:      #E2DDCD;
+  --sage:        #7E9A78;
+
+  /* Typography */
+  --font-head:   'Sora', system-ui, sans-serif;
+  --font-body:   'Public Sans', system-ui, sans-serif;
+
+  /* Spacing */
+  --radius:      14px;
+  --maxw:        1140px;
+  --section-pad: 78px;
+}
+
+/* ============================================
+   RESET & BASE
+   ============================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-head);
+  color: var(--navy);
+  letter-spacing: -0.01em;
+}
+
+a { color: var(--navy); }
+img { max-width: 100%; display: block; }
+
+/* ============================================
+   UTILITIES
+   ============================================ */
+.wrap {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+.eyebrow {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 26px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 0.98rem;
+  text-decoration: none;
+  transition: transform 0.15s ease, background 0.15s ease;
+  cursor: pointer;
+  border: none;
+  font-family: var(--font-body);
+}
+
+.btn-primary {
+  background: var(--navy);
+  color: var(--white);
+}
+.btn-primary:hover { background: var(--navy-deep); transform: translateY(-1px); }
+
+.btn-ghost {
+  background: transparent;
+  color: var(--navy);
+  border: 2px solid var(--navy);
+}
+.btn-ghost:hover { background: var(--navy); color: var(--white); }
+
+/* ============================================
+   ACCESSIBILITY
+   ============================================ */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: var(--navy);
+  color: var(--white);
+  padding: 10px 16px;
+  z-index: 9999;
+  font-weight: 700;
+}
+.skip-link:focus { left: 8px; top: 8px; }
+
+:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 2px;
+}

@@ -1,0 +1,294 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { 
+  title, 
+  description = "Alved provides caring, individualized support that helps people with intellectual and developmental disabilities build skills, gain independence, and belong in their communities."
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content={description} />
+  <title>{title} | Alved Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap" 
+    rel="stylesheet" 
+  />
+  <link rel="stylesheet" href="/styles/global.css" />
+</head>
+<body>
+
+  <!-- Skip link for screen readers -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ====== HEADER / NAV ====== -->
+  <header class="site-header">
+    <nav class="wrap nav-inner" aria-label="Primary navigation">
+      <a href="/" class="brand" aria-label="Alved Services home">
+        <span class="brand-mark" aria-hidden="true">
+          <span class="sun"></span>
+          <span class="shield"></span>
+        </span>
+        Alved
+      </a>
+
+      <button 
+        class="menu-btn" 
+        id="menuBtn" 
+        aria-expanded="false" 
+        aria-controls="navList"
+        aria-label="Open navigation menu"
+      >
+        ☰
+      </button>
+
+      <ul id="navList" class="nav-list" role="list">
+        <li><a href="/about">About</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/waiver">Waiver Info</a></li>
+        <li><a href="/careers">Careers</a></li>
+        <li><a href="/contact" class="nav-cta">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ====== PAGE CONTENT ====== -->
+  <main id="main">
+    <slot />
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="brand brand--white" aria-label="Alved Services home">
+          <span class="brand-mark" aria-hidden="true">
+            <span class="sun"></span>
+            <span class="shield"></span>
+          </span>
+          Alved
+        </a>
+        <p>Independence. Dignity. Belonging.</p>
+      </div>
+
+      <nav aria-label="Footer navigation">
+        <h4>Site</h4>
+        <ul role="list">
+          <li><a href="/about">About</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/waiver">Waiver Info</a></li>
+          <li><a href="/careers">Careers</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <ul role="list">
+          <li><a href="mailto:info@alved.org">info@alved.org</a></li>
+          <li><a href="tel:+13175550123">(317) 555-0123</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="wrap">
+        © {new Date().getFullYear()} Alved Services, LLC — All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+<style>
+  /* ====== HEADER ====== */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(251, 248, 242, 0.95);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  /* Brand mark */
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--navy);
+    text-decoration: none;
+  }
+  .brand--white { color: var(--white); }
+
+  .brand-mark {
+    width: 34px;
+    height: 34px;
+    position: relative;
+    flex-shrink: 0;
+  }
+  .sun {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--gold);
+    box-shadow: 0 0 0 3px var(--gold-soft);
+  }
+  .shield {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 20px;
+    height: 22px;
+    border: 2.5px solid var(--navy);
+    border-radius: 4px 4px 10px 10px;
+    background: var(--bg);
+  }
+
+  /* Nav list */
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 26px;
+  }
+  .nav-list a {
+    text-decoration: none;
+    color: var(--ink);
+    font-weight: 600;
+    font-size: 0.96rem;
+  }
+  .nav-list a:hover { color: var(--navy); }
+
+  .nav-cta {
+    background: var(--navy);
+    color: var(--white) !important;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 0.92rem;
+  }
+  .nav-cta:hover { background: var(--navy-deep) !important; }
+
+  /* Mobile menu button */
+  .menu-btn {
+    display: none;
+    background: none;
+    border: 2px solid var(--navy);
+    border-radius: 8px;
+    padding: 8px 10px;
+    font-size: 1.1rem;
+    color: var(--navy);
+    cursor: pointer;
+  }
+
+  /* ====== FOOTER ====== */
+  .site-footer {
+    background: var(--navy);
+    color: #dfe6ee;
+    padding: 48px 0 0;
+    margin-top: 20px;
+  }
+
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 40px;
+  }
+
+  .footer-brand p {
+    max-width: 240px;
+    color: #b9c6d8;
+    font-size: 0.9rem;
+    margin-top: 14px;
+  }
+
+  .site-footer h4 {
+    color: var(--white);
+    font-family: var(--font-head);
+    font-size: 1rem;
+    margin-bottom: 14px;
+  }
+
+  .site-footer ul {
+    list-style: none;
+    display: grid;
+    gap: 8px;
+  }
+
+  .site-footer a {
+    color: #cfdaea;
+    text-decoration: none;
+    font-size: 0.92rem;
+  }
+  .site-footer a:hover { color: var(--white); }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 18px 0;
+    font-size: 0.82rem;
+    color: #aebfd4;
+    text-align: center;
+  }
+
+  /* ====== MOBILE ====== */
+  @media (max-width: 768px) {
+    .menu-btn { display: inline-block; }
+
+    .nav-list {
+      display: none;
+      position: fixed;
+      top: 65px;
+      left: 0;
+      right: 0;
+      background: var(--bg);
+      flex-direction: column;
+      padding: 18px 28px;
+      border-bottom: 1px solid var(--border);
+      gap: 16px;
+    }
+    .nav-list.open { display: flex; }
+
+    .footer-inner { flex-direction: column; }
+  }
+</style>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const navList = document.getElementById('navList');
+
+  menuBtn?.addEventListener('click', () => {
+    const isOpen = navList?.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  // Close menu when a link is clicked
+  navList?.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navList.classList.remove('open');
+      menuBtn?.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
