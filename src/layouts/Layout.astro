@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css';
+
 export interface Props {
   title: string;
   description?: string;
@@ -22,14 +24,11 @@ const {
     href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap" 
     rel="stylesheet" 
   />
-  <link rel="stylesheet" href="/styles/global.css" />
 </head>
 <body>
 
-  <!-- Skip link for screen readers -->
   <a href="#main" class="skip-link">Skip to main content</a>
 
-  <!-- ====== HEADER / NAV ====== -->
   <header class="site-header">
     <nav class="wrap nav-inner" aria-label="Primary navigation">
       <a href="/" class="brand" aria-label="Alved Services home">
@@ -60,12 +59,10 @@ const {
     </nav>
   </header>
 
-  <!-- ====== PAGE CONTENT ====== -->
   <main id="main">
     <slot />
   </main>
 
-  <!-- ====== FOOTER ====== -->
   <footer class="site-footer">
     <div class="wrap footer-inner">
       <div class="footer-brand">
@@ -109,7 +106,6 @@ const {
 </html>
 
 <style>
-  /* ====== HEADER ====== */
   .site-header {
     position: sticky;
     top: 0;
@@ -127,7 +123,6 @@ const {
     padding-bottom: 14px;
   }
 
-  /* Brand mark */
   .brand {
     display: flex;
     align-items: center;
@@ -167,7 +162,6 @@ const {
     background: var(--bg);
   }
 
-  /* Nav list */
   .nav-list {
     list-style: none;
     display: flex;
@@ -190,7 +184,6 @@ const {
   }
   .nav-cta:hover { background: var(--navy-deep) !important; }
 
-  /* Mobile menu button */
   .menu-btn {
     display: none;
     background: none;
@@ -202,7 +195,6 @@ const {
     cursor: pointer;
   }
 
-  /* ====== FOOTER ====== */
   .site-footer {
     background: var(--navy);
     color: #dfe6ee;
@@ -253,7 +245,6 @@ const {
     text-align: center;
   }
 
-  /* ====== MOBILE ====== */
   @media (max-width: 768px) {
     .menu-btn { display: inline-block; }
 
@@ -270,7 +261,6 @@ const {
       gap: 16px;
     }
     .nav-list.open { display: flex; }
-
     .footer-inner { flex-direction: column; }
   }
 </style>
@@ -284,7 +274,6 @@ const {
     menuBtn.setAttribute('aria-expanded', String(isOpen));
   });
 
-  // Close menu when a link is clicked
   navList?.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       navList.classList.remove('open');

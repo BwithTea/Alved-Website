@@ -7,6 +7,12 @@ import Layout from '../layouts/Layout.astro';
   <!-- ====== HERO ====== -->
   <section class="hero" aria-label="Welcome to Alved">
     <div class="hero-bg" aria-hidden="true">
+      <img 
+        src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1600&q=80" 
+        alt=""
+        class="hero-img"
+        fetchpriority="high"
+      />
       <div class="hero-overlay"></div>
     </div>
 
@@ -21,7 +27,7 @@ import Layout from '../layouts/Layout.astro';
         </p>
         <div class="btn-row">
           <a href="/services" class="btn btn-primary">See Our Services</a>
-          <a href="/contact" class="btn btn-ghost">Get Started</a>
+          <a href="/contact" class="btn btn-ghost-light">Get Started</a>
         </div>
       </div>
 
@@ -38,6 +44,10 @@ import Layout from '../layouts/Layout.astro';
           <span class="badge">CQL Accredited</span>
         </div>
       </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span></span>
     </div>
   </section>
 
@@ -103,6 +113,77 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
+  <!-- ====== PHOTO SHOWCASE ====== -->
+  <section class="showcase" aria-labelledby="showcase-heading">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Our Work</span>
+        <h2 id="showcase-heading">Making a difference every day</h2>
+        <p>A look at the support, connections, and community moments we help create.</p>
+      </div>
+
+      <div class="photo-grid">
+
+        <article class="photo-card reveal">
+          <div class="photo-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=800&q=80" 
+              alt="A support professional working alongside an individual in the community"
+              loading="lazy"
+            />
+          </div>
+          <div class="photo-caption">
+            <h3>Community Support</h3>
+            <p>Our Direct Support Professionals meet individuals where they are — at home, at work, and out in the community.</p>
+          </div>
+        </article>
+
+        <article class="photo-card reveal reveal--delay">
+          <div class="photo-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=800&q=80" 
+              alt="Group of individuals participating in a community activity together"
+              loading="lazy"
+            />
+          </div>
+          <div class="photo-caption">
+            <h3>Building Connections</h3>
+            <p>We actively support meaningful participation in relationships and activities chosen by each individual.</p>
+          </div>
+        </article>
+
+        <article class="photo-card reveal reveal--delay-2">
+          <div class="photo-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80" 
+              alt="Support professional and individual working together on a skill"
+              loading="lazy"
+            />
+          </div>
+          <div class="photo-caption">
+            <h3>Skill Building</h3>
+            <p>Every session is focused on helping individuals gain new skills and grow more independent over time.</p>
+          </div>
+        </article>
+
+        <article class="photo-card reveal reveal--delay-3">
+          <div class="photo-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80" 
+              alt="Families and individuals together at a community gathering"
+              loading="lazy"
+            />
+          </div>
+          <div class="photo-caption">
+            <h3>Family & Community</h3>
+            <p>We work alongside families and support teams to make sure every individual feels valued and included.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
   <!-- ====== SERVICES PREVIEW ====== -->
   <section class="services-preview" aria-labelledby="services-heading">
     <div class="wrap">
@@ -149,8 +230,8 @@ import Layout from '../layouts/Layout.astro';
         <p>We're here to help you understand your options and take the next step.</p>
       </div>
       <div class="cta-btns">
-        <a href="/contact" class="btn btn-primary">Contact Us</a>
-        <a href="/waiver" class="btn btn-ghost btn-ghost--light">Learn About the Waiver</a>
+        <a href="/contact" class="btn btn-gold">Contact Us</a>
+        <a href="/waiver" class="btn btn-ghost-light">Learn About the Waiver</a>
       </div>
     </div>
   </section>
@@ -161,7 +242,7 @@ import Layout from '../layouts/Layout.astro';
   /* ====== HERO ====== */
   .hero {
     position: relative;
-    min-height: 92vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -170,24 +251,25 @@ import Layout from '../layouts/Layout.astro';
   .hero-bg {
     position: absolute;
     inset: 0;
-    background: 
-      linear-gradient(155deg, var(--navy-deep) 0%, var(--navy) 60%, #2a5298 100%);
     z-index: 0;
   }
 
-  /* Subtle texture pattern */
-  .hero-bg::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image: radial-gradient(circle at 20% 50%, rgba(184,144,44,0.15) 0%, transparent 50%),
-                      radial-gradient(circle at 80% 20%, rgba(255,255,255,0.05) 0%, transparent 40%);
+  .hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 
   .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, rgba(20,42,69,0.3) 0%, transparent 100%);
+    background: linear-gradient(
+      105deg,
+      rgba(20, 42, 69, 0.88) 0%,
+      rgba(31, 58, 95, 0.75) 50%,
+      rgba(31, 58, 95, 0.5) 100%
+    );
   }
 
   .hero-content {
@@ -197,27 +279,25 @@ import Layout from '../layouts/Layout.astro';
     grid-template-columns: 1.1fr 0.9fr;
     gap: 54px;
     align-items: center;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .hero h1 {
-    font-size: clamp(2.6rem, 5vw, 4rem);
+    font-size: clamp(2.8rem, 5.5vw, 4.2rem);
     font-weight: 700;
-    line-height: 1.08;
+    line-height: 1.06;
     color: var(--white);
     margin-bottom: 22px;
   }
 
-  .hero .eyebrow {
-    color: var(--gold-soft);
-  }
+  .hero .eyebrow { color: var(--gold-soft); }
 
   .lead {
     font-size: 1.15rem;
     color: rgba(255,255,255,0.85);
     max-width: 500px;
-    margin-bottom: 32px;
+    margin-bottom: 34px;
     line-height: 1.7;
   }
 
@@ -227,28 +307,31 @@ import Layout from '../layouts/Layout.astro';
     flex-wrap: wrap;
   }
 
-  .hero .btn-primary {
+  .btn-gold {
     background: var(--gold);
     color: var(--navy-deep);
+    font-weight: 700;
   }
-  .hero .btn-primary:hover {
-    background: #a07820;
-  }
+  .btn-gold:hover { background: #a07820; transform: translateY(-1px); }
 
-  .hero .btn-ghost {
-    border-color: rgba(255,255,255,0.6);
+  .btn-ghost-light {
+    background: transparent;
     color: var(--white);
+    border: 2px solid rgba(255,255,255,0.6);
+    font-weight: 700;
   }
-  .hero .btn-ghost:hover {
-    background: rgba(255,255,255,0.15);
+  .btn-ghost-light:hover {
+    background: rgba(255,255,255,0.12);
     color: var(--white);
+    transform: translateY(-1px);
   }
 
   /* Hero card */
   .hero-card {
-    background: rgba(255,255,255,0.08);
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(255,255,255,0.18);
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255,255,255,0.2);
     border-radius: var(--radius);
     padding: 32px;
   }
@@ -265,7 +348,7 @@ import Layout from '../layouts/Layout.astro';
   }
 
   .hero-card > p {
-    color: rgba(255,255,255,0.8);
+    color: rgba(255,255,255,0.82);
     margin-bottom: 14px;
   }
 
@@ -280,7 +363,6 @@ import Layout from '../layouts/Layout.astro';
     gap: 10px;
     color: var(--white);
     font-size: 0.95rem;
-    align-items: flex-start;
   }
   .check-list li::before {
     content: "✓";
@@ -303,6 +385,28 @@ import Layout from '../layouts/Layout.astro';
     padding: 5px 12px;
   }
 
+  /* Scroll indicator */
+  .hero-scroll {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  .hero-scroll span {
+    display: block;
+    width: 2px;
+    height: 48px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.6), transparent);
+    margin: 0 auto;
+    animation: scrollLine 2s ease-in-out infinite;
+  }
+  @keyframes scrollLine {
+    0% { opacity: 0; transform: scaleY(0); transform-origin: top; }
+    50% { opacity: 1; transform: scaleY(1); transform-origin: top; }
+    100% { opacity: 0; transform: scaleY(1); transform-origin: bottom; }
+  }
+
   /* ====== MISSION STRIP ====== */
   .mission-strip {
     background: var(--white);
@@ -314,7 +418,6 @@ import Layout from '../layouts/Layout.astro';
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0;
     flex-wrap: wrap;
   }
 
@@ -328,10 +431,7 @@ import Layout from '../layouts/Layout.astro';
     justify-content: center;
   }
 
-  .mission-icon {
-    font-size: 1.8rem;
-    flex-shrink: 0;
-  }
+  .mission-icon { font-size: 1.8rem; flex-shrink: 0; }
 
   .mission-item strong {
     display: block;
@@ -354,9 +454,7 @@ import Layout from '../layouts/Layout.astro';
   }
 
   /* ====== ABOUT PREVIEW ====== */
-  .about-preview {
-    padding: var(--section-pad) 0;
-  }
+  .about-preview { padding: var(--section-pad) 0; }
 
   .about-inner {
     display: grid;
@@ -375,9 +473,7 @@ import Layout from '../layouts/Layout.astro';
     margin-bottom: 16px;
   }
 
-  .about-text .btn {
-    margin-top: 8px;
-  }
+  .about-text .btn { margin-top: 8px; }
 
   .visual-card {
     background: var(--navy);
@@ -436,8 +532,8 @@ import Layout from '../layouts/Layout.astro';
     font-style: normal;
   }
 
-  /* ====== SERVICES PREVIEW ====== */
-  .services-preview {
+  /* ====== PHOTO SHOWCASE ====== */
+  .showcase {
     padding: var(--section-pad) 0;
     background: var(--bg-alt);
   }
@@ -449,12 +545,67 @@ import Layout from '../layouts/Layout.astro';
 
   .section-head h2 {
     font-size: clamp(1.6rem, 3vw, 2.2rem);
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
 
-  .section-head p {
+  .section-head p { color: var(--ink-soft); }
+
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .photo-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .photo-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px -12px rgba(31,58,95,0.22);
+  }
+
+  .photo-wrap {
+    width: 100%;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+  }
+
+  .photo-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+
+  .photo-card:hover .photo-wrap img {
+    transform: scale(1.04);
+  }
+
+  .photo-caption {
+    padding: 20px;
+  }
+
+  .photo-caption h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: var(--navy);
+  }
+
+  .photo-caption p {
+    font-size: 0.88rem;
     color: var(--ink-soft);
-    font-size: 1.02rem;
+    margin: 0;
+    line-height: 1.55;
+  }
+
+  /* ====== SERVICES PREVIEW ====== */
+  .services-preview {
+    padding: var(--section-pad) 0;
   }
 
   .services-grid {
@@ -499,9 +650,7 @@ import Layout from '../layouts/Layout.astro';
     margin: 0;
   }
 
-  .services-cta {
-    text-align: center;
-  }
+  .services-cta { text-align: center; }
 
   /* ====== CTA BANNER ====== */
   .cta-banner {
@@ -523,9 +672,7 @@ import Layout from '../layouts/Layout.astro';
     margin-bottom: 8px;
   }
 
-  .cta-banner p {
-    color: rgba(255,255,255,0.75);
-  }
+  .cta-banner p { color: rgba(255,255,255,0.75); }
 
   .cta-btns {
     display: flex;
@@ -534,60 +681,34 @@ import Layout from '../layouts/Layout.astro';
     flex-shrink: 0;
   }
 
-  .cta-banner .btn-primary {
-    background: var(--gold);
-    color: var(--navy-deep);
-  }
-
-  .btn-ghost--light {
-    border-color: rgba(255,255,255,0.5);
-    color: var(--white);
-  }
-  .btn-ghost--light:hover {
-    background: rgba(255,255,255,0.1);
-    color: var(--white);
-  }
-
   /* ====== ANIMATIONS ====== */
   .reveal {
     opacity: 0;
     transform: translateY(18px);
     transition: opacity 0.6s ease, transform 0.6s ease;
   }
-  .reveal.in {
-    opacity: 1;
-    transform: none;
-  }
-  .reveal--delay  { transition-delay: 0.15s; }
+  .reveal.in { opacity: 1; transform: none; }
+  .reveal--delay   { transition-delay: 0.15s; }
   .reveal--delay-2 { transition-delay: 0.3s; }
   .reveal--delay-3 { transition-delay: 0.45s; }
 
   /* ====== MOBILE ====== */
   @media (max-width: 880px) {
-    .hero-content {
-      grid-template-columns: 1fr;
-    }
-    .about-inner {
-      grid-template-columns: 1fr;
-    }
-    .services-grid {
-      grid-template-columns: 1fr 1fr;
-    }
-    .cta-inner {
-      flex-direction: column;
-      text-align: center;
-    }
+    .hero-content { grid-template-columns: 1fr; }
+    .about-inner  { grid-template-columns: 1fr; }
+    .photo-grid   { grid-template-columns: 1fr 1fr; }
+    .services-grid { grid-template-columns: 1fr 1fr; }
+    .cta-inner    { flex-direction: column; text-align: center; }
     .mission-divider { display: none; }
   }
 
   @media (max-width: 540px) {
+    .photo-grid    { grid-template-columns: 1fr; }
     .services-grid { grid-template-columns: 1fr; }
   }
 </style>
 
 <script>
-  // Intersection observer for reveal animations
-  // Respects prefers-reduced-motion (handled in global.css)
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver(
     (entries) => {
@@ -598,7 +719,7 @@ import Layout from '../layouts/Layout.astro';
         }
       });
     },
-    { threshold: 0.1 }
+    { threshold: 0.08 }
   );
   reveals.forEach(el => observer.observe(el));
 </script>
