@@ -2,17 +2,17 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout 
+<Layout
   title="Our Services"
-  description="Alved provides Residential Habilitation, Community Integration Habilitation, Participant Assistance and Care, and Respite services across Indiana."
+  description="Alved Services provides Day Habilitation, Residential Habilitation, Participant Assistance and Care, and Respite services for adults in Marion County, Indiana."
 >
 
   <!-- PAGE HERO -->
   <section class="page-hero" aria-label="Our Services">
     <div class="wrap page-hero-inner reveal">
       <span class="eyebrow">Our Services</span>
-      <h1>Support built around each person</h1>
-      <p class="lead">Every service is individualized and planned together with the individual, their family, and their support team. We work to understand each person's strengths, goals, and preferences — and build support around that.</p>
+      <h1>Support built around you</h1>
+      <p class="lead">Alved Services is a residential services provider offering individualized support for adults with intellectual and developmental disabilities in Marion County. Every service is planned together with you, your family, and your support team.</p>
     </div>
   </section>
 
@@ -20,69 +20,125 @@ import Layout from '../layouts/Layout.astro';
   <section class="services-section" aria-labelledby="services-heading">
     <div class="services-bg-shape" aria-hidden="true"></div>
     <div class="wrap">
-      <h2 id="services-heading" class="sr-only">Our approved services</h2>
+      <div class="section-head reveal">
+        <span class="eyebrow">What We Offer</span>
+        <h2 id="services-heading">Our approved services</h2>
+        <p>All services are available through Indiana's Medicaid Waiver programs for eligible adults at no cost to you.</p>
+      </div>
       <div class="services-grid" role="list">
 
-        <article class="service-card reveal" role="listitem" id="rhs">
+        <article class="service-card reveal" role="listitem" id="day-hab">
           <div class="service-card-top">
-            <span class="abbr" aria-label="Residential Habilitation and Support">RHS</span>
+            <span class="abbr">DAY</span>
+            <span class="service-tag">Day Program</span>
+          </div>
+          <h3>Day Habilitation</h3>
+          <p>Structured daytime programming focused on skill-building, community access, and meaningful daily activities.</p>
+          <a href="/contact" class="service-link">Press here to contact us for more information</a>
+        </article>
+
+        <article class="service-card reveal reveal--delay" role="listitem" id="rhs">
+          <div class="service-card-top">
+            <span class="abbr">RHS</span>
             <span class="service-tag">Home Based</span>
           </div>
           <h3>Residential Habilitation & Support</h3>
-          <p>Daily living and skill-building support provided at home or in a residential setting. Our DSPs work alongside individuals to build routines, develop independence, and feel safe and supported where they live.</p>
+          <p>Support provided in your home to help you build the skills you need for everyday life.</p>
           <ul class="service-list" role="list">
-            <li>Daily living skill development</li>
-            <li>Personal care and hygiene support</li>
-            <li>Household management skills</li>
-            <li>Safety awareness and planning</li>
-          </ul>
-        </article>
-
-        <article class="service-card reveal reveal--delay" role="listitem" id="cih">
-          <div class="service-card-top">
-            <span class="abbr" aria-label="Community Integration Habilitation">CIH</span>
-            <span class="service-tag">Community Based</span>
-          </div>
-          <h3>Community Integration Habilitation</h3>
-          <p>Skill-building and support provided out in the community — on the individual's own terms. We help individuals participate meaningfully in everyday life, including employment, recreation, and social connections.</p>
-          <ul class="service-list" role="list">
-            <li>Community access and navigation</li>
-            <li>Employment and volunteer support</li>
-            <li>Social skill development</li>
-            <li>Recreation and leisure participation</li>
+            <li>Teaching and reinforcing self-care skills</li>
+            <li>Medication assistance</li>
           </ul>
         </article>
 
         <article class="service-card reveal" role="listitem" id="pac">
           <div class="service-card-top">
-            <span class="abbr" aria-label="Participant Assistance and Care">PAC</span>
+            <span class="abbr">PAC</span>
             <span class="service-tag">Personal Care</span>
           </div>
           <h3>Participant Assistance & Care</h3>
-          <p>Hands-on personal care and assistance with everyday activities. PAC services are tailored to each individual's specific needs, helping them maintain their health, dignity, and comfort.</p>
+          <p>Hands-on assistance with your daily personal needs and community participation.</p>
           <ul class="service-list" role="list">
             <li>Personal hygiene and grooming</li>
-            <li>Meal preparation and nutrition</li>
-            <li>Mobility and transfer assistance</li>
-            <li>Health and medication support</li>
+            <li>Meal planning and preparation</li>
+            <li>Managing household tasks</li>
+            <li>Reporting changes in health or behavior</li>
+            <li>Transportation to appointments, work, shopping, and community activities</li>
+            <li>Promoting independence through prompts and self-advocacy</li>
+            <li>Supporting communication</li>
+            <li>Ensuring your safety</li>
           </ul>
         </article>
 
         <article class="service-card reveal reveal--delay" role="listitem" id="respite">
           <div class="service-card-top">
-            <span class="abbr" aria-label="Respite">RESP</span>
+            <span class="abbr">RESP</span>
             <span class="service-tag">Family Support</span>
           </div>
           <h3>Respite</h3>
-          <p>Short-term relief care so families and primary caregivers can rest, recharge, and take care of their own needs. Respite gives families confidence knowing their loved one is in caring, capable hands.</p>
+          <p>Short-term care so your family and caregivers can rest, knowing you are in safe and caring hands.</p>
           <ul class="service-list" role="list">
-            <li>Planned and emergency respite</li>
-            <li>In-home or community-based</li>
-            <li>Flexible scheduling</li>
-            <li>Qualified, trained support staff</li>
+            <li>Protective supervision to ensure your safety</li>
+            <li>Responding to your routine needs</li>
+            <li>Personal care assistance</li>
+            <li>Maintaining your lifestyle and daily routine</li>
           </ul>
         </article>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- DSP SECTION -->
+  <section class="dsp-section" aria-labelledby="dsp-heading">
+    <div class="dsp-bg-shape" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Direct Support Professionals</span>
+        <h2 id="dsp-heading">What your DSP will do for you</h2>
+        <p>Our Direct Support Professionals (DSPs) are trained, caring staff who work directly with you every day. Here is what they will support you with across all of our services.</p>
+      </div>
+      <div class="dsp-grid reveal">
+        <div class="dsp-card">
+          <div class="dsp-icon" aria-hidden="true">🏠</div>
+          <h3>In Your Home</h3>
+          <ul role="list">
+            <li>Providing quality care in your home as needed</li>
+            <li>Assisting with personal hygiene, bathing, grooming, and dressing</li>
+            <li>Meal preparation and assistance with dining</li>
+            <li>Keeping your home clean, safe, and well maintained</li>
+            <li>Medication assistance and health monitoring</li>
+          </ul>
+        </div>
+        <div class="dsp-card">
+          <div class="dsp-icon" aria-hidden="true">🏘️</div>
+          <h3>In Your Community</h3>
+          <ul role="list">
+            <li>Transportation to appointments, work, shopping, and activities</li>
+            <li>Supporting you to take part in community life</li>
+            <li>Helping you build and maintain relationships</li>
+            <li>Supporting employment and volunteer opportunities</li>
+          </ul>
+        </div>
+        <div class="dsp-card">
+          <div class="dsp-icon" aria-hidden="true">📈</div>
+          <h3>Your Independence</h3>
+          <ul role="list">
+            <li>Teaching and reinforcing daily living skills</li>
+            <li>Providing prompts and guidance, not doing it for you</li>
+            <li>Supporting your communication and self-advocacy</li>
+            <li>Helping you make your own choices</li>
+          </ul>
+        </div>
+        <div class="dsp-card">
+          <div class="dsp-icon" aria-hidden="true">💚</div>
+          <h3>Your Health & Safety</h3>
+          <ul role="list">
+            <li>Continuous monitoring of your health and safety</li>
+            <li>Responding to health changes and emergencies</li>
+            <li>Documenting your care accurately and on time</li>
+            <li>Treating you with respect and dignity at all times</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -93,40 +149,40 @@ import Layout from '../layouts/Layout.astro';
       <div class="section-head reveal">
         <span class="eyebrow">Our Work in Action</span>
         <h2 id="carousel-heading">What support looks like every day</h2>
-        <p>Real moments from the community — skill building, connection, and belonging.</p>
+        <p>Real moments of care, skill-building, and community connection for the adults we support.</p>
       </div>
       <div class="slider-wrap reveal">
         <div class="slider-track" id="sliderTrack" role="region" aria-label="Photo slideshow" aria-live="polite">
           <div class="slide" role="group" aria-label="Slide 1 of 4">
-            <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=1200&q=80" alt="A support professional working alongside an individual in a community setting" />
+            <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=1200&q=80" alt="A support professional working alongside an adult individual in a community setting" />
             <div class="slide-caption">
-              <span class="slide-tag">RHS & CIH</span>
-              <h3>Meeting individuals where they are</h3>
-              <p>Our DSPs provide support at home, at work, and out in the community — always on the individual's terms.</p>
+              <span class="slide-tag">Day Habilitation</span>
+              <h3>Structured days built around your goals</h3>
+              <p>Day Habilitation gives you a place to build skills, connect with others, and take part in meaningful activities every day.</p>
             </div>
           </div>
           <div class="slide" role="group" aria-label="Slide 2 of 4">
-            <img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=1200&q=80" alt="A group of individuals participating together in a community activity" />
+            <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=1200&q=80" alt="Support professional assisting an individual with daily living skills at home" />
             <div class="slide-caption">
-              <span class="slide-tag">Community Integration</span>
-              <h3>Building real connections</h3>
-              <p>We support meaningful participation in relationships, employment, and community life chosen by the individual.</p>
+              <span class="slide-tag">Residential Habilitation</span>
+              <h3>Learning skills for everyday life</h3>
+              <p>Your DSP works with you at home to build the skills you need to live as independently as possible.</p>
             </div>
           </div>
           <div class="slide" role="group" aria-label="Slide 3 of 4">
-            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1200&q=80" alt="Support professional and individual working together on a skill" />
+            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1200&q=80" alt="Support professional helping an individual with personal care and community access" />
             <div class="slide-caption">
-              <span class="slide-tag">Skill Building</span>
-              <h3>Growing independence every day</h3>
-              <p>Every session is focused on building real-life skills that help individuals do more on their own over time.</p>
+              <span class="slide-tag">Participant Assistance & Care</span>
+              <h3>Personal care that respects your dignity</h3>
+              <p>PAC support is tailored to your specific needs, helping you stay healthy, safe, and active in your community.</p>
             </div>
           </div>
           <div class="slide" role="group" aria-label="Slide 4 of 4">
-            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200&q=80" alt="Families and individuals together at a community event" />
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200&q=80" alt="Families and individuals in a relaxed, caring setting" />
             <div class="slide-caption">
-              <span class="slide-tag">Respite & Family Support</span>
-              <h3>Supporting the whole family</h3>
-              <p>Families can rest knowing their loved one is in caring, capable hands — so everyone can recharge.</p>
+              <span class="slide-tag">Respite</span>
+              <h3>Peace of mind for your whole family</h3>
+              <p>Respite care gives your family the break they need, knowing you are in safe, caring hands.</p>
             </div>
           </div>
         </div>
@@ -152,8 +208,8 @@ import Layout from '../layouts/Layout.astro';
       <div class="waiver-text">
         <span class="eyebrow">Medicaid Waiver</span>
         <h2 id="waiver-callout-heading">These services may be covered at no cost to you</h2>
-        <p>All of Alved's services are available through Indiana's Medicaid Waiver programs. Eligible individuals can receive support at home and in the community, covered by Medicaid.</p>
-        <a href="/waiver" class="btn btn-primary">Learn About the Waiver</a>
+        <p>All of Alved Services' programs are available through Indiana's Medicaid Waiver programs. If you or your loved one qualifies, services are covered by Medicaid at no cost to you.</p>
+        <a href="/waiver" class="btn btn-primary">Press here to Learn About the Waiver</a>
       </div>
       <div class="waiver-programs" aria-label="Approved waiver programs">
         <h3>Approved programs</h3>
@@ -161,9 +217,10 @@ import Layout from '../layouts/Layout.astro';
           <li>Community Integration Waiver</li>
           <li>Family Support Waiver</li>
           <li>Money Follows the Person Program</li>
+          <li>Adult Day Services</li>
         </ul>
         <div class="waiver-badges">
-          <span class="w-badge">BDDS Approved</span>
+          <span class="w-badge">Marion County Provider</span>
           <span class="w-badge">CQL Accredited</span>
         </div>
       </div>
@@ -177,8 +234,8 @@ import Layout from '../layouts/Layout.astro';
       <h2>Ready to get started?</h2>
       <p>Contact us to learn which services are right for you or your loved one.</p>
       <div class="btn-row">
-        <a href="/contact" class="btn btn-gold">Contact Us</a>
-        <a href="/careers" class="btn btn-ghost-light">Join Our Team</a>
+        <a href="/contact" class="btn btn-gold">Press here to Contact Us</a>
+        <a href="/careers" class="btn btn-ghost-light">Press here to Join Our Team</a>
       </div>
     </div>
   </section>
@@ -186,34 +243,18 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <style>
-  /* PAGE HERO */
-  .page-hero {
-    position: relative;
-    padding: 100px 0 90px;
-    overflow: hidden;
-  }
-  .page-hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: url('https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=1600&q=80') center/cover no-repeat;
-    z-index: 0;
-  }
-  .page-hero::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(20,42,69,0.93) 0%, rgba(31,58,95,0.82) 60%, rgba(31,58,95,0.65) 100%);
-    z-index: 1;
-  }
+  .page-hero { position: relative; padding: 100px 0 90px; overflow: hidden; }
+  .page-hero::before { content: ''; position: absolute; inset: 0; background: url('https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=1600&q=80') center/cover no-repeat; z-index: 0; }
+  .page-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(20,42,69,0.93) 0%, rgba(31,58,95,0.82) 60%, rgba(31,58,95,0.65) 100%); z-index: 1; }
   .page-hero-inner { position: relative; z-index: 2; max-width: 720px; }
   .page-hero .eyebrow { color: var(--gold-soft); }
   .page-hero h1 { color: var(--white); font-size: clamp(2.2rem, 4vw, 3.2rem); margin-bottom: 18px; }
   .page-hero .lead { color: rgba(255,255,255,0.82); font-size: 1.1rem; line-height: 1.7; max-width: 580px; }
 
-  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  .section-head { max-width: 580px; margin-bottom: 44px; }
+  .section-head h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); margin-bottom: 10px; }
+  .section-head p { color: var(--ink-soft); }
 
-  /* SERVICE CARDS */
   .services-section { padding: var(--section-pad) 0; position: relative; overflow: hidden; }
   .services-bg-shape { position: absolute; top: -100px; right: -100px; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(184,144,44,0.06) 0%, transparent 70%); pointer-events: none; }
   .services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; position: relative; z-index: 1; }
@@ -225,16 +266,24 @@ import Layout from '../layouts/Layout.astro';
   .abbr { font-family: var(--font-head); font-weight: 700; color: var(--navy); font-size: 1.8rem; }
   .service-tag { background: var(--gold-soft); color: var(--navy-deep); font-size: 0.75rem; font-weight: 700; padding: 4px 12px; border-radius: 20px; }
   .service-card h3 { font-size: 1.1rem; color: var(--ink); margin-bottom: 10px; }
-  .service-card > p { color: var(--ink-soft); font-size: 0.93rem; line-height: 1.65; margin-bottom: 18px; }
-  .service-list { list-style: none; display: grid; gap: 6px; }
+  .service-card > p { color: var(--ink-soft); font-size: 0.93rem; line-height: 1.65; margin-bottom: 14px; }
+  .service-list { list-style: none; display: grid; gap: 6px; margin-bottom: 0; }
   .service-list li { display: flex; gap: 8px; font-size: 0.88rem; color: var(--ink-soft); align-items: flex-start; }
   .service-list li::before { content: "✓"; color: var(--sage); font-weight: 700; flex-shrink: 0; }
+  .service-link { display: inline-block; margin-top: 14px; font-size: 0.88rem; color: var(--navy); font-weight: 700; text-decoration: underline; }
+  .service-link:hover { color: var(--gold); }
 
-  /* CAROUSEL */
-  .carousel-section { background: var(--bg-alt); padding: var(--section-pad) 0; }
-  .section-head { max-width: 580px; margin-bottom: 36px; }
-  .section-head h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); margin-bottom: 10px; }
-  .section-head p { color: var(--ink-soft); }
+  .dsp-section { background: var(--bg-alt); padding: var(--section-pad) 0; position: relative; overflow: hidden; }
+  .dsp-bg-shape { position: absolute; bottom: -80px; left: -80px; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(31,58,95,0.05) 0%, transparent 70%); pointer-events: none; }
+  .dsp-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; position: relative; z-index: 1; }
+  .dsp-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px 22px; border-top: 4px solid var(--navy); }
+  .dsp-icon { font-size: 1.8rem; margin-bottom: 12px; }
+  .dsp-card h3 { font-family: var(--font-head); font-size: 1rem; color: var(--navy); margin-bottom: 14px; }
+  .dsp-card ul { list-style: none; display: grid; gap: 8px; }
+  .dsp-card li { font-size: 0.88rem; color: var(--ink-soft); display: flex; gap: 8px; line-height: 1.5; }
+  .dsp-card li::before { content: "→"; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+
+  .carousel-section { padding: var(--section-pad) 0; }
   .slider-wrap { position: relative; border-radius: var(--radius); overflow: hidden; width: 100%; background: var(--navy-deep); }
   .slider-track { display: flex; width: 100%; transition: transform 0.5s cubic-bezier(0.4,0,0.2,1); will-change: transform; }
   .slide { width: 100%; min-width: 100%; max-width: 100%; flex: 0 0 100%; position: relative; height: 460px; overflow: hidden; }
@@ -254,12 +303,13 @@ import Layout from '../layouts/Layout.astro';
   .pause-btn { background: none; border: 1px solid var(--border); border-radius: 20px; padding: 5px 14px; font-size: 0.78rem; font-family: var(--font-body); color: var(--ink-soft); cursor: pointer; }
   .pause-btn:hover { background: var(--border); }
 
-  /* WAIVER CALLOUT */
-  .waiver-callout { padding: var(--section-pad) 0; position: relative; overflow: hidden; }
+  .waiver-callout { padding: var(--section-pad) 0; position: relative; overflow: hidden; background: var(--bg-alt); }
   .waiver-bg-shape { position: absolute; bottom: -80px; left: -80px; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(31,58,95,0.05) 0%, transparent 70%); pointer-events: none; }
   .waiver-inner { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 60px; align-items: center; position: relative; z-index: 1; }
   .waiver-text h2 { font-size: clamp(1.5rem, 2.5vw, 2rem); margin-bottom: 14px; }
   .waiver-text p { color: var(--ink-soft); margin-bottom: 24px; line-height: 1.7; }
+  .btn-primary { background: var(--navy); color: var(--white); font-weight: 700; }
+  .btn-primary:hover { background: var(--navy-deep); transform: translateY(-1px); }
   .waiver-programs { background: var(--navy); border-radius: var(--radius); padding: 30px; }
   .waiver-programs h3 { color: var(--white); font-size: 1rem; margin-bottom: 16px; }
   .waiver-programs ul { list-style: none; display: grid; gap: 10px; margin-bottom: 20px; }
@@ -268,33 +318,32 @@ import Layout from '../layouts/Layout.astro';
   .waiver-badges { display: flex; gap: 8px; flex-wrap: wrap; }
   .w-badge { font-size: 0.72rem; font-weight: 700; color: var(--white); border: 1.5px solid rgba(255,255,255,0.35); border-radius: 20px; padding: 4px 11px; }
 
-  /* CTA */
   .services-cta { background: var(--navy); padding: 64px 0; position: relative; overflow: hidden; }
   .cta-bg-shape { position: absolute; top: -80px; right: -80px; width: 400px; height: 400px; border-radius: 50%; background: rgba(184,144,44,0.08); pointer-events: none; }
   .cta-inner { text-align: center; max-width: 580px; margin: 0 auto; position: relative; z-index: 1; }
   .cta-inner h2 { color: var(--white); font-size: clamp(1.6rem, 3vw, 2rem); margin-bottom: 10px; }
   .cta-inner p { color: rgba(255,255,255,0.75); margin-bottom: 28px; }
   .btn-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
-  .btn-primary { background: var(--navy); color: var(--white); font-weight: 700; }
-  .btn-primary:hover { background: var(--navy-deep); transform: translateY(-1px); }
   .btn-gold { background: var(--gold); color: var(--navy-deep); font-weight: 700; }
   .btn-gold:hover { background: #a07820; transform: translateY(-1px); }
   .btn-ghost-light { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.5); font-weight: 700; }
   .btn-ghost-light:hover { background: rgba(255,255,255,0.1); color: var(--white); }
 
-  /* ANIMATIONS */
   .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
   .reveal.in { opacity: 1; transform: none; }
   .reveal--delay  { transition-delay: 0.15s; }
   .reveal--delay-2 { transition-delay: 0.3s; }
 
-  /* MOBILE */
-  @media (max-width: 768px) {
+  @media (max-width: 880px) {
     .services-grid { grid-template-columns: 1fr; }
-    .waiver-inner  { grid-template-columns: 1fr; }
+    .dsp-grid { grid-template-columns: 1fr 1fr; }
+    .waiver-inner { grid-template-columns: 1fr; }
     .slide { height: 320px; }
     .slide-caption { padding: 30px 20px 20px; }
     .slider-arrow { display: none; }
+  }
+  @media (max-width: 540px) {
+    .dsp-grid { grid-template-columns: 1fr; }
   }
 </style>
 
@@ -319,22 +368,15 @@ import Layout from '../layouts/Layout.astro';
   document.getElementById('prevBtn')?.addEventListener('click', () => goTo(current - 1));
   document.getElementById('nextBtn')?.addEventListener('click', () => goTo(current + 1));
   dots.forEach((d, i) => d.addEventListener('click', () => goTo(i)));
-
   pauseBtn?.addEventListener('click', () => {
     paused = !paused;
-    if (pauseBtn) {
-      pauseBtn.textContent = paused ? '▶ Resume' : '❚❚ Pause';
-      pauseBtn.setAttribute('aria-label', paused ? 'Resume slideshow' : 'Pause slideshow');
-    }
+    if (pauseBtn) { pauseBtn.textContent = paused ? '▶ Resume' : '❚❚ Pause'; }
   });
-
   setInterval(() => { if (!paused) goTo(current + 1); }, 4500);
 
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver(
-    (entries) => entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); }
-    }),
+    (entries) => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); } }),
     { threshold: 0.1 }
   );
   reveals.forEach(el => observer.observe(el));

@@ -5,31 +5,33 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Home">
 
   <!-- HERO -->
-  <section class="hero" aria-label="Welcome to Alved">
+  <section class="hero" aria-label="Welcome to Alved Services">
     <div class="hero-bg" aria-hidden="true">
       <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1600&q=80" alt="" class="hero-img" fetchpriority="high" />
       <div class="hero-overlay"></div>
     </div>
     <div class="wrap hero-content">
       <div class="hero-text reveal">
-        <span class="eyebrow">Indiana Medicaid Waiver Provider</span>
-        <h1>Helping People<br/>Live, Grow,<br/>and Belong.</h1>
-        <p class="lead">Alved provides caring, individualized support that helps people with intellectual and developmental disabilities build skills, gain independence, and belong in their communities.</p>
+        <span class="eyebrow">Marion County Medicaid Waiver Provider</span>
+        <h1>Helping Adults<br/>Live, Grow,<br/>and Belong.</h1>
+        <p class="lead">Alved Services is a residential services provider offering caring, individualized support for adults with intellectual and developmental disabilities, including individuals with autism. We help you build skills, gain independence, and belong in your community.</p>
         <div class="btn-row">
-          <a href="/services" class="btn btn-gold">See Our Services</a>
-          <a href="/contact" class="btn btn-ghost-light">Get Started</a>
+          <a href="/services" class="btn btn-gold">Press here to See Our Services</a>
+          <a href="/contact" class="btn btn-ghost-light">Press here to Get Started</a>
         </div>
       </div>
       <div class="hero-card reveal reveal--delay" aria-label="Approved waiver services">
-        <span class="card-tag">Approved Waiver Services</span>
-        <p>Alved is a CQL-accredited provider for:</p>
+        <span class="card-tag">Approved Programs & Services</span>
+        <p>Alved Services is a CQL-accredited provider for:</p>
         <ul class="check-list" role="list">
           <li>Community Integration Waiver</li>
           <li>Family Support Waiver</li>
           <li>Money Follows the Person Program</li>
+          <li>Adult Day Services</li>
+          <li>Day Habilitation</li>
         </ul>
         <div class="card-badges">
-          <span class="badge">BDDS Approved</span>
+          <span class="badge">Marion County Provider</span>
           <span class="badge">CQL Accredited</span>
         </div>
       </div>
@@ -38,10 +40,10 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- STATS BAR -->
-  <div class="stats-bar" aria-label="About Alved at a glance">
+  <div class="stats-bar" aria-label="About Alved Services at a glance">
     <div class="wrap stats-inner">
       <div class="stat">
-        <strong>3</strong>
+        <strong>3+</strong>
         <span>Approved Waiver Programs</span>
       </div>
       <div class="stat-divider" aria-hidden="true"></div>
@@ -51,13 +53,13 @@ import Layout from '../layouts/Layout.astro';
       </div>
       <div class="stat-divider" aria-hidden="true"></div>
       <div class="stat">
-        <strong>BDDS</strong>
+        <strong>BDS</strong>
         <span>State Approved Provider</span>
       </div>
       <div class="stat-divider" aria-hidden="true"></div>
       <div class="stat">
-        <strong>Indiana</strong>
-        <span>Serving Indianapolis & Surrounding Areas</span>
+        <strong>Marion County</strong>
+        <span>Serving Adults in Our Community</span>
       </div>
     </div>
   </div>
@@ -98,22 +100,35 @@ import Layout from '../layouts/Layout.astro';
       <div class="about-text reveal">
         <span class="eyebrow">Who We Are</span>
         <h2 id="about-heading">Light and strength, together.</h2>
-        <p>The name Alved carries meaning. <strong>Alva</strong> — light, clarity, and hope. <strong>Edith</strong> — blessed strength and resilience. Together they reflect exactly how we show up for every individual and family we serve.</p>
-        <p>We are a person-centered Medicaid waiver provider based in Indiana, dedicated to helping individuals with intellectual and developmental disabilities live full, meaningful lives — on their own terms.</p>
-        <a href="/about" class="btn btn-primary">Learn About Alved</a>
+        <p>Alved Services came about from an observed need for adults with intellectual and developmental disabilities to live with more independence and autonomy. Our focus is supporting adult individuals with autism and other intellectual and developmental disabilities.</p>
+        <p>We are a person-centered, residential services provider based in Marion County, Indiana. Everything we do is built around you, your family, and what matters most to your life.</p>
+        <a href="/about" class="btn btn-primary">Press here to Learn About Alved Services</a>
       </div>
       <div class="about-visual reveal reveal--delay">
         <div class="visual-img-wrap">
-          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80" alt="A support professional working one-on-one with an individual" />
+          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80" alt="A support professional working one-on-one with an adult individual" />
           <div class="visual-quote-card" aria-hidden="true">
             <div class="vq-marks">
               <div class="vq-sun"></div>
               <div class="vq-shield"></div>
             </div>
             <p>"Every individual deserves the opportunity to shine."</p>
-            <cite>Alved Brand Promise</cite>
+            <cite>Alved Services Brand Promise</cite>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- YOUR RIGHTS -->
+  <section class="rights-section" aria-labelledby="rights-heading">
+    <div class="wrap rights-inner reveal">
+      <div class="rights-icon" aria-hidden="true">⚖️</div>
+      <div class="rights-text">
+        <span class="eyebrow">Your Rights</span>
+        <h2 id="rights-heading">You have rights, and we are here to protect them.</h2>
+        <p>Every adult we support has the right to be treated with dignity and respect, the right to make your own choices, and the right to make a complaint at any time, without fear of retaliation. If you ever have a concern about your services, we want to hear from you.</p>
+        <a href="/contact#concerns" class="btn btn-gold-light">Press here to Submit a Concern</a>
       </div>
     </div>
   </section>
@@ -124,25 +139,25 @@ import Layout from '../layouts/Layout.astro';
       <div class="section-head reveal">
         <span class="eyebrow">Our Work</span>
         <h2 id="showcase-heading">Making a difference every day</h2>
-        <p>A look at the support, connections, and community moments we help create.</p>
+        <p>A look at the support, connections, and community moments we help create for the adults we serve.</p>
       </div>
       <div class="photo-grid">
         <article class="photo-card reveal">
           <div class="photo-wrap">
-            <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=800&q=80" alt="A support professional working alongside an individual in the community" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=800&q=80" alt="A support professional working alongside an adult individual in the community" loading="lazy" />
           </div>
           <div class="photo-caption">
             <h3>Community Support</h3>
-            <p>Our Direct Support Professionals meet individuals where they are — at home, at work, and out in the community.</p>
+            <p>Our Direct Support Professionals meet you where you are, at home, at work, and out in your community.</p>
           </div>
         </article>
         <article class="photo-card reveal reveal--delay">
           <div class="photo-wrap">
-            <img src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=800&q=80" alt="Group of individuals participating in a community activity" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?w=800&q=80" alt="Adult individuals participating in a community activity together" loading="lazy" />
           </div>
           <div class="photo-caption">
             <h3>Building Connections</h3>
-            <p>We actively support meaningful participation in relationships and activities chosen by each individual.</p>
+            <p>We support your meaningful participation in relationships and activities you choose.</p>
           </div>
         </article>
         <article class="photo-card reveal reveal--delay-2">
@@ -151,16 +166,16 @@ import Layout from '../layouts/Layout.astro';
           </div>
           <div class="photo-caption">
             <h3>Skill Building</h3>
-            <p>Every session is focused on helping individuals gain new skills and grow more independent over time.</p>
+            <p>Every session is focused on helping you gain new skills and grow more independent over time.</p>
           </div>
         </article>
         <article class="photo-card reveal reveal--delay-3">
           <div class="photo-wrap">
-            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80" alt="Families and individuals together at a community gathering" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?w=800&q=80" alt="Families and individuals together in a welcoming setting" loading="lazy" />
           </div>
           <div class="photo-caption">
             <h3>Family & Community</h3>
-            <p>We work alongside families to make sure every individual feels valued and included.</p>
+            <p>We work alongside you and your family to make sure every individual feels valued and included.</p>
           </div>
         </article>
       </div>
@@ -173,41 +188,41 @@ import Layout from '../layouts/Layout.astro';
     <div class="wrap">
       <div class="section-head reveal">
         <span class="eyebrow">Our Services</span>
-        <h2 id="services-heading">Support built around each person</h2>
-        <p>Every service is individualized and planned together with the individual, their family, and their support team.</p>
+        <h2 id="services-heading">Support built around you</h2>
+        <p>Every service is planned together with you, your family, and your support team.</p>
       </div>
       <div class="services-grid" role="list">
         <article class="service-card reveal" role="listitem">
           <div class="service-card-inner">
-            <span class="abbr" aria-label="Residential Habilitation and Support">RHS</span>
-            <h3>Residential Habilitation & Support</h3>
-            <p>Daily living and skill-building support at home or in a residential setting.</p>
+            <span class="abbr">DAY</span>
+            <h3>Day Habilitation</h3>
+            <p>Structured daytime support focused on skill-building and community participation.</p>
           </div>
         </article>
         <article class="service-card reveal reveal--delay" role="listitem">
           <div class="service-card-inner">
-            <span class="abbr" aria-label="Community Integration Habilitation">CIH</span>
-            <h3>Community Integration Habilitation</h3>
-            <p>Skill-building and community support on the individual's own terms.</p>
+            <span class="abbr">RHS</span>
+            <h3>Residential Habilitation & Support</h3>
+            <p>Skill-building and personal care support in your home.</p>
           </div>
         </article>
         <article class="service-card reveal reveal--delay-2" role="listitem">
           <div class="service-card-inner">
-            <span class="abbr" aria-label="Participant Assistance and Care">PAC</span>
+            <span class="abbr">PAC</span>
             <h3>Participant Assistance & Care</h3>
-            <p>Hands-on personal care and assistance with everyday activities.</p>
+            <p>Personal care and daily living assistance tailored to your needs.</p>
           </div>
         </article>
         <article class="service-card reveal reveal--delay-3" role="listitem">
           <div class="service-card-inner">
-            <span class="abbr" aria-label="Respite">RESP</span>
+            <span class="abbr">RESP</span>
             <h3>Respite</h3>
-            <p>Short-term relief care so families and caregivers can rest and recharge.</p>
+            <p>Short-term care so your family and caregivers can rest and recharge.</p>
           </div>
         </article>
       </div>
       <div class="services-cta reveal">
-        <a href="/services" class="btn btn-primary">See All Services</a>
+        <a href="/services" class="btn btn-primary">Press here to See All Services</a>
       </div>
     </div>
   </section>
@@ -218,11 +233,11 @@ import Layout from '../layouts/Layout.astro';
     <div class="wrap cta-inner reveal">
       <div>
         <h2 id="cta-heading">Ready to get started?</h2>
-        <p>We're here to help you understand your options and take the next step.</p>
+        <p>We are here to help you understand your options and take the next step.</p>
       </div>
       <div class="cta-btns">
-        <a href="/contact" class="btn btn-gold">Contact Us</a>
-        <a href="/waiver" class="btn btn-ghost-light">Learn About the Waiver</a>
+        <a href="/contact" class="btn btn-gold">Press here to Contact Us</a>
+        <a href="/waiver" class="btn btn-ghost-light">Press here to Learn About the Waiver</a>
       </div>
     </div>
   </section>
@@ -230,7 +245,6 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <style>
-  /* HERO */
   .hero { position: relative; min-height: 100vh; display: flex; align-items: center; overflow: hidden; }
   .hero-bg { position: absolute; inset: 0; z-index: 0; }
   .hero-img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
@@ -238,12 +252,16 @@ import Layout from '../layouts/Layout.astro';
   .hero-content { position: relative; z-index: 1; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 54px; align-items: center; padding-top: 100px; padding-bottom: 100px; }
   .hero h1 { font-size: clamp(2.8rem, 5.5vw, 4.2rem); font-weight: 700; line-height: 1.06; color: var(--white); margin-bottom: 22px; }
   .hero .eyebrow { color: var(--gold-soft); }
-  .lead { font-size: 1.15rem; color: rgba(255,255,255,0.85); max-width: 500px; margin-bottom: 34px; line-height: 1.7; }
+  .lead { font-size: 1.1rem; color: rgba(255,255,255,0.85); max-width: 500px; margin-bottom: 34px; line-height: 1.7; }
   .btn-row { display: flex; gap: 14px; flex-wrap: wrap; }
   .btn-gold { background: var(--gold); color: var(--navy-deep); font-weight: 700; }
   .btn-gold:hover { background: #a07820; transform: translateY(-1px); }
+  .btn-gold-light { background: var(--gold-soft); color: var(--navy-deep); font-weight: 700; }
+  .btn-gold-light:hover { background: var(--gold); transform: translateY(-1px); }
   .btn-ghost-light { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.6); font-weight: 700; }
   .btn-ghost-light:hover { background: rgba(255,255,255,0.12); color: var(--white); transform: translateY(-1px); }
+  .btn-primary { background: var(--navy); color: var(--white); font-weight: 700; }
+  .btn-primary:hover { background: var(--navy-deep); transform: translateY(-1px); }
   .hero-card { background: rgba(255,255,255,0.1); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border: 1px solid rgba(255,255,255,0.2); border-radius: var(--radius); padding: 32px; }
   .card-tag { display: inline-block; background: var(--gold); color: var(--navy-deep); font-size: 0.78rem; font-weight: 700; padding: 5px 12px; border-radius: 20px; margin-bottom: 16px; }
   .hero-card > p { color: rgba(255,255,255,0.82); margin-bottom: 14px; }
@@ -256,7 +274,6 @@ import Layout from '../layouts/Layout.astro';
   .hero-scroll span { display: block; width: 2px; height: 48px; background: linear-gradient(to bottom, rgba(255,255,255,0.6), transparent); margin: 0 auto; animation: scrollLine 2s ease-in-out infinite; }
   @keyframes scrollLine { 0% { opacity: 0; transform: scaleY(0); transform-origin: top; } 50% { opacity: 1; transform: scaleY(1); transform-origin: top; } 100% { opacity: 0; transform: scaleY(1); transform-origin: bottom; } }
 
-  /* STATS BAR */
   .stats-bar { background: var(--navy-deep); padding: 22px 0; border-bottom: 3px solid var(--gold); }
   .stats-inner { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; }
   .stat { text-align: center; padding: 10px 40px; flex: 1; min-width: 160px; }
@@ -264,7 +281,6 @@ import Layout from '../layouts/Layout.astro';
   .stat span { font-size: 0.8rem; color: rgba(255,255,255,0.7); line-height: 1.4; }
   .stat-divider { width: 1px; height: 40px; background: rgba(255,255,255,0.15); flex-shrink: 0; }
 
-  /* MISSION STRIP */
   .mission-strip { background: var(--white); border-bottom: 1px solid var(--border); padding: 40px 0; }
   .mission-inner { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; }
   .mission-item { display: flex; align-items: center; gap: 16px; padding: 16px 40px; flex: 1; min-width: 200px; justify-content: center; }
@@ -273,15 +289,12 @@ import Layout from '../layouts/Layout.astro';
   .mission-item p { color: var(--ink-soft); font-size: 0.88rem; margin: 0; }
   .mission-divider { width: 1px; height: 50px; background: var(--border); flex-shrink: 0; }
 
-  /* ABOUT PREVIEW */
   .about-preview { padding: var(--section-pad) 0; position: relative; overflow: hidden; }
   .about-bg-shape { position: absolute; top: -120px; right: -120px; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(184,144,44,0.07) 0%, transparent 70%); pointer-events: none; }
   .about-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; position: relative; z-index: 1; }
   .about-text h2 { font-size: clamp(1.8rem, 3vw, 2.4rem); margin-bottom: 18px; }
   .about-text p { color: var(--ink-soft); margin-bottom: 16px; }
   .about-text .btn { margin-top: 8px; }
-  .btn-primary { background: var(--navy); color: var(--white); font-weight: 700; }
-  .btn-primary:hover { background: var(--navy-deep); transform: translateY(-1px); }
   .visual-img-wrap { position: relative; border-radius: var(--radius); overflow: hidden; }
   .visual-img-wrap img { width: 100%; height: 380px; object-fit: cover; display: block; }
   .visual-quote-card { position: absolute; bottom: 20px; left: 20px; right: 20px; background: rgba(20,42,69,0.92); backdrop-filter: blur(8px); border-radius: 10px; padding: 20px 22px; }
@@ -291,7 +304,13 @@ import Layout from '../layouts/Layout.astro';
   .visual-quote-card p { font-family: var(--font-head); font-size: 0.95rem; color: var(--white); margin-bottom: 8px; line-height: 1.5; }
   .visual-quote-card cite { font-size: 0.78rem; color: var(--gold-soft); font-style: normal; }
 
-  /* PHOTO SHOWCASE */
+  .rights-section { background: var(--navy); padding: 54px 0; }
+  .rights-inner { display: flex; gap: 30px; align-items: flex-start; }
+  .rights-icon { font-size: 2.5rem; flex-shrink: 0; margin-top: 4px; }
+  .rights-text .eyebrow { color: var(--gold-soft); }
+  .rights-text h2 { color: var(--white); font-size: clamp(1.4rem, 2.5vw, 1.8rem); margin-bottom: 14px; }
+  .rights-text p { color: rgba(255,255,255,0.8); font-size: 0.97rem; line-height: 1.7; margin-bottom: 22px; max-width: 680px; }
+
   .showcase { padding: var(--section-pad) 0; background: var(--bg-alt); }
   .section-head { max-width: 620px; margin-bottom: 44px; }
   .section-head h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 10px; }
@@ -306,7 +325,6 @@ import Layout from '../layouts/Layout.astro';
   .photo-caption h3 { font-size: 1rem; margin-bottom: 8px; color: var(--navy); }
   .photo-caption p { font-size: 0.88rem; color: var(--ink-soft); margin: 0; line-height: 1.55; }
 
-  /* SERVICES PREVIEW */
   .services-preview { padding: var(--section-pad) 0; background: var(--bg); position: relative; overflow: hidden; }
   .services-bg-shape { position: absolute; bottom: -100px; left: -100px; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(31,58,95,0.05) 0%, transparent 70%); pointer-events: none; }
   .services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-bottom: 36px; }
@@ -320,7 +338,6 @@ import Layout from '../layouts/Layout.astro';
   .service-card p { font-size: 0.92rem; color: var(--ink-soft); margin: 0; }
   .services-cta { text-align: center; }
 
-  /* CTA BANNER */
   .cta-banner { background: var(--navy); padding: 64px 0; position: relative; overflow: hidden; }
   .cta-bg-shape { position: absolute; top: -80px; right: -80px; width: 400px; height: 400px; border-radius: 50%; background: rgba(184,144,44,0.08); pointer-events: none; }
   .cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 30px; flex-wrap: wrap; position: relative; z-index: 1; }
@@ -328,34 +345,35 @@ import Layout from '../layouts/Layout.astro';
   .cta-banner p { color: rgba(255,255,255,0.75); }
   .cta-btns { display: flex; gap: 14px; flex-wrap: wrap; flex-shrink: 0; }
 
-  /* ANIMATIONS */
   .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
   .reveal.in { opacity: 1; transform: none; }
   .reveal--delay   { transition-delay: 0.15s; }
   .reveal--delay-2 { transition-delay: 0.3s; }
   .reveal--delay-3 { transition-delay: 0.45s; }
 
-  /* MOBILE */
   @media (max-width: 880px) {
-    .hero-content { grid-template-columns: 1fr; }
-    .about-inner  { grid-template-columns: 1fr; }
-    .photo-grid   { grid-template-columns: 1fr 1fr; }
-    .services-grid { grid-template-columns: 1fr 1fr; }
-    .cta-inner    { flex-direction: column; text-align: center; }
+    .hero-content    { grid-template-columns: 1fr; }
+    .about-inner     { grid-template-columns: 1fr; }
+    .photo-grid      { grid-template-columns: 1fr 1fr; }
+    .services-grid   { grid-template-columns: 1fr 1fr; }
+    .cta-inner       { flex-direction: column; text-align: center; }
     .mission-divider { display: none; }
-    .stat-divider { display: none; }
+    .stat-divider    { display: none; }
+    .rights-inner    { flex-direction: column; }
   }
   @media (max-width: 540px) {
     .photo-grid    { grid-template-columns: 1fr; }
     .services-grid { grid-template-columns: 1fr; }
-    .stat { padding: 10px 20px; }
+    .stat          { padding: 10px 20px; }
   }
 </style>
 
 <script>
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver(
-    (entries) => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); } }),
+    (entries) => entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); }
+    }),
     { threshold: 0.08 }
   );
   reveals.forEach(el => observer.observe(el));

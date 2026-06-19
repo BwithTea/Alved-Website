@@ -1,0 +1,316 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Contact Us"
+  description="Get in touch with Alved Services. We are here to answer your questions about services, referrals, and how to get started."
+>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" aria-label="Contact Alved Services">
+    <div class="wrap page-hero-inner reveal">
+      <span class="eyebrow">Contact Alved Services</span>
+      <h1>We are here to help you.</h1>
+      <p class="lead">Whether you are a family looking for services, a program manager making a referral, or someone who wants to learn more, reach out. We will get back to you promptly.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT GRID -->
+  <section class="contact-section" aria-labelledby="contact-heading">
+    <div class="contact-bg-shape" aria-hidden="true"></div>
+    <div class="wrap contact-inner">
+
+      <!-- LEFT: INFO -->
+      <div class="contact-info reveal">
+        <h2 id="contact-heading" class="sr-only">Contact information</h2>
+
+        <div class="info-card">
+          <div class="info-item">
+            <div class="info-icon" aria-hidden="true">📍</div>
+            <div>
+              <strong>Visit Us</strong>
+              <span>[Street Address]<br/>Indianapolis, IN [ZIP]</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon" aria-hidden="true">☎</div>
+            <div>
+              <strong>Call Us</strong>
+              <a href="tel:+17654918616">(765) 491-8616</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon" aria-hidden="true">✉</div>
+            <div>
+              <strong>General Inquiries</strong>
+              <a href="mailto:info@alved.org">info@alved.org</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon" aria-hidden="true">📋</div>
+            <div>
+              <strong>Referrals</strong>
+              <a href="mailto:contact@alved.org">contact@alved.org</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon" aria-hidden="true">👤</div>
+            <div>
+              <strong>Patricia</strong>
+              <a href="mailto:patricia@alved.org">patricia@alved.org</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="concern-card" id="concerns">
+          <h3>Submit a Concern</h3>
+          <p>You have the right to make a complaint at any time. We take all concerns seriously and will respond promptly. Use the dedicated addresses below to make sure your message reaches the right team.</p>
+          <div class="concern-links">
+            <a href="mailto:clientconcerns@alved.org" class="concern-link">
+              <span class="concern-icon" aria-hidden="true">👤</span>
+              <div>
+                <strong>Concern About Services</strong>
+                <span>clientconcerns@alved.org</span>
+              </div>
+            </a>
+            <a href="mailto:employeeconcerns@alved.org" class="concern-link">
+              <span class="concern-icon" aria-hidden="true">👥</span>
+              <div>
+                <strong>Employee Concern</strong>
+                <span>employeeconcerns@alved.org</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="badges-row" aria-label="Accreditation">
+          <span class="accred-badge">Marion County Provider</span>
+          <span class="accred-badge accred-badge--gold">CQL Accredited</span>
+        </div>
+      </div>
+
+      <!-- RIGHT: FORM -->
+      <div class="contact-form-wrap reveal reveal--delay">
+        <form class="contact-form" aria-label="Contact form" novalidate>
+          <h2>Send us a message</h2>
+          <p class="form-sub">Not sure where to start? Fill out the form and we will help point you in the right direction.</p>
+
+          <div class="form-grid">
+            <div class="field">
+              <label for="fname">First Name <span class="required" aria-label="required">*</span></label>
+              <input type="text" id="fname" name="fname" autocomplete="given-name" required />
+            </div>
+            <div class="field">
+              <label for="lname">Last Name <span class="required" aria-label="required">*</span></label>
+              <input type="text" id="lname" name="lname" autocomplete="family-name" required />
+            </div>
+            <div class="field field--full">
+              <label for="email">Email Address <span class="required" aria-label="required">*</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" required />
+            </div>
+            <div class="field field--full">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" />
+            </div>
+            <div class="field field--full">
+              <label for="regarding">What is this regarding? <span class="required" aria-label="required">*</span></label>
+              <select id="regarding" name="regarding" required>
+                <option value="" disabled selected>Select one</option>
+                <option>General Question</option>
+                <option>Referral, Services for a Family Member</option>
+                <option>Concern About Services</option>
+                <option>Employee-Related Concern</option>
+                <option>Career, Employment Inquiry</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field field--full">
+              <label for="message">Message <span class="required" aria-label="required">*</span></label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help..." required></textarea>
+            </div>
+          </div>
+
+          <div class="form-footer">
+            <button type="submit" class="btn btn-gold btn-submit">Press here to Send Message</button>
+            <p class="form-note">Fields marked <span class="required">*</span> are required. We aim to respond within 1 to 2 business days.</p>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HOW TO GET STARTED -->
+  <section class="started-section" aria-labelledby="started-heading">
+    <div class="started-bg-shape" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Where to Start</span>
+        <h2 id="started-heading">Not sure how to get started?</h2>
+        <p>Here is a simple overview of what the process looks like for new individuals and families.</p>
+      </div>
+      <div class="steps-grid reveal">
+        <div class="step-card">
+          <span class="step-num" aria-label="Step 1">1</span>
+          <h3>Reach Out</h3>
+          <p>Contact us by phone, email, or the form above. We will answer your questions and help you figure out if Alved Services is the right fit for you.</p>
+        </div>
+        <div class="step-arrow" aria-hidden="true">→</div>
+        <div class="step-card">
+          <span class="step-num" aria-label="Step 2">2</span>
+          <h3>Connect with a Program Manager</h3>
+          <p>If you do not already have one, we can help connect you with a program manager who will assist with eligibility and waiver enrollment.</p>
+        </div>
+        <div class="step-arrow" aria-hidden="true">→</div>
+        <div class="step-card">
+          <span class="step-num" aria-label="Step 3">3</span>
+          <h3>Build Your Plan</h3>
+          <p>Together with you, your family, and your support team, we develop a personalized plan based on your goals and what matters most to you.</p>
+        </div>
+        <div class="step-arrow" aria-hidden="true">→</div>
+        <div class="step-card">
+          <span class="step-num" aria-label="Step 4">4</span>
+          <h3>Services Begin</h3>
+          <p>Once everything is in place, your DSP is matched and services begin, always centered around you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDITORIAL PHOTO -->
+  <section class="editorial-section" aria-labelledby="editorial-heading">
+    <div class="wrap editorial-row reveal">
+      <div class="editorial-img">
+        <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=800&q=80" alt="A support professional and adult individual working together in the community" loading="lazy" />
+      </div>
+      <div class="editorial-text">
+        <span class="eyebrow">Our Promise to You</span>
+        <h2 id="editorial-heading">No pressure, no jargon, just honest answers.</h2>
+        <p>We know navigating disability services can feel overwhelming. We are here to make it simple. When you reach out to Alved Services, you will talk to a real person who will listen, answer your questions honestly, and help you take the next step, whatever that looks like for you.</p>
+        <a href="tel:+17654918616" class="btn btn-primary">Press here to Call Us Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="contact-cta" aria-label="Final call to action">
+    <div class="cta-bg-shape" aria-hidden="true"></div>
+    <div class="wrap contact-cta-inner reveal">
+      <h2>Ready to take the next step?</h2>
+      <p>We are here Monday through Friday and will get back to you as quickly as possible.</p>
+      <div class="btn-row">
+        <a href="tel:+17654918616" class="btn btn-gold">Press here to Call (765) 491-8616</a>
+        <a href="mailto:info@alved.org" class="btn btn-ghost-light">Press here to Email Us</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .page-hero { position: relative; padding: 100px 0 90px; overflow: hidden; }
+  .page-hero::before { content: ''; position: absolute; inset: 0; background: url('https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=1600&q=80') center/cover no-repeat; z-index: 0; }
+  .page-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(20,42,69,0.93) 0%, rgba(31,58,95,0.82) 60%, rgba(31,58,95,0.65) 100%); z-index: 1; }
+  .page-hero-inner { position: relative; z-index: 2; max-width: 680px; }
+  .page-hero .eyebrow { color: var(--gold-soft); }
+  .page-hero h1 { color: var(--white); font-size: clamp(2.2rem, 4vw, 3.2rem); margin-bottom: 18px; }
+  .page-hero .lead { color: rgba(255,255,255,0.82); font-size: 1.1rem; line-height: 1.7; }
+
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+  .contact-section { padding: var(--section-pad) 0; position: relative; overflow: hidden; }
+  .contact-bg-shape { position: absolute; top: -100px; right: -100px; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(184,144,44,0.06) 0%, transparent 70%); pointer-events: none; }
+  .contact-inner { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 50px; align-items: start; position: relative; z-index: 1; }
+
+  .info-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; margin-bottom: 20px; }
+  .info-item { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 24px; }
+  .info-item:last-child { margin-bottom: 0; }
+  .info-icon { width: 42px; height: 42px; border-radius: 10px; background: var(--gold-soft); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; }
+  .info-item strong { display: block; font-family: var(--font-head); font-size: 0.9rem; color: var(--navy); margin-bottom: 4px; }
+  .info-item span, .info-item a { font-size: 0.92rem; color: var(--ink-soft); text-decoration: none; line-height: 1.5; }
+  .info-item a:hover { color: var(--navy); text-decoration: underline; }
+
+  .concern-card { background: var(--navy); border-radius: var(--radius); padding: 28px; margin-bottom: 20px; }
+  .concern-card h3 { color: var(--white); font-size: 1rem; margin-bottom: 8px; }
+  .concern-card > p { color: rgba(255,255,255,0.75); font-size: 0.88rem; margin-bottom: 18px; line-height: 1.6; }
+  .concern-links { display: grid; gap: 12px; }
+  .concern-link { display: flex; gap: 14px; align-items: flex-start; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 10px; padding: 14px 16px; text-decoration: none; transition: background 0.2s; }
+  .concern-link:hover { background: rgba(255,255,255,0.14); }
+  .concern-icon { font-size: 1.2rem; flex-shrink: 0; margin-top: 2px; }
+  .concern-link strong { display: block; color: var(--white); font-size: 0.88rem; margin-bottom: 3px; }
+  .concern-link span { color: rgba(255,255,255,0.65); font-size: 0.82rem; }
+
+  .badges-row { display: flex; gap: 10px; flex-wrap: wrap; }
+  .accred-badge { font-size: 0.78rem; font-weight: 700; color: var(--navy); border: 1.5px solid var(--navy); border-radius: 20px; padding: 6px 14px; }
+  .accred-badge--gold { background: var(--navy); color: var(--gold); border-color: var(--navy); }
+
+  .contact-form-wrap { position: relative; z-index: 1; }
+  .contact-form { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 40px; }
+  .contact-form h2 { font-size: 1.4rem; margin-bottom: 6px; }
+  .form-sub { color: var(--ink-soft); font-size: 0.92rem; margin-bottom: 28px; }
+  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .field { display: flex; flex-direction: column; gap: 6px; }
+  .field--full { grid-column: 1 / -1; }
+  label { font-weight: 600; font-size: 0.9rem; color: var(--ink); }
+  .required { color: var(--gold); font-weight: 700; }
+  input[type="text"], input[type="email"], input[type="tel"], select, textarea { font-family: inherit; font-size: 0.95rem; padding: 11px 14px; border: 1.5px solid var(--border); border-radius: 8px; background: var(--bg); color: var(--ink); transition: border-color 0.2s; }
+  input:focus, select:focus, textarea:focus { outline: none; border-color: var(--navy); box-shadow: 0 0 0 3px rgba(31,58,95,0.1); }
+  textarea { resize: vertical; min-height: 120px; }
+  .form-footer { margin-top: 24px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+  .form-note { font-size: 0.82rem; color: var(--ink-soft); margin: 0; }
+  .btn-gold { background: var(--gold); color: var(--navy-deep); font-weight: 700; }
+  .btn-gold:hover { background: #a07820; transform: translateY(-1px); }
+  .btn-submit { font-size: 1rem; padding: 14px 30px; }
+
+  .started-section { background: var(--bg-alt); padding: var(--section-pad) 0; position: relative; overflow: hidden; }
+  .started-bg-shape { position: absolute; bottom: -80px; right: -80px; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(31,58,95,0.05) 0%, transparent 70%); pointer-events: none; }
+  .section-head { max-width: 580px; margin-bottom: 44px; }
+  .section-head h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 10px; }
+  .section-head p { color: var(--ink-soft); }
+  .steps-grid { display: flex; align-items: center; gap: 0; flex-wrap: wrap; position: relative; z-index: 1; align-items: stretch}
+  .step-card { display: flex; flex-direction: column;background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 24px; flex: 1; min-width: 180px; }
+  .step-num { display: flex; align-items: center; justify-content: center; width: 38px; height: 38px; border-radius: 50%; background: var(--navy); color: var(--white); font-family: var(--font-head); font-weight: 700; font-size: 1rem; margin-bottom: 14px; }
+  .step-card h3 { font-size: 1rem; color: var(--navy); margin-bottom: 8px; }
+  .step-card p { font-size: 0.88rem; color: var(--ink-soft); margin: 0; line-height: 1.6; }
+  .step-arrow { font-size: 1.4rem; color: var(--gold); padding: 0 10px; flex-shrink: 0; font-weight: 700; }
+
+  .editorial-section { padding: var(--section-pad) 0; }
+  .editorial-row { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+  .editorial-img { border-radius: var(--radius); overflow: hidden; }
+  .editorial-img img { width: 100%; height: 380px; object-fit: cover; display: block; }
+  .editorial-text h2 { font-size: clamp(1.5rem, 2.5vw, 2rem); margin-bottom: 16px; }
+  .editorial-text p { color: var(--ink-soft); font-size: 0.95rem; line-height: 1.7; margin-bottom: 24px; }
+  .btn-primary { background: var(--navy); color: var(--white); font-weight: 700; }
+  .btn-primary:hover { background: var(--navy-deep); transform: translateY(-1px); }
+
+  .contact-cta { background: var(--navy); padding: 64px 0; position: relative; overflow: hidden; }
+  .cta-bg-shape { position: absolute; top: -80px; right: -80px; width: 400px; height: 400px; border-radius: 50%; background: rgba(184,144,44,0.08); pointer-events: none; }
+  .contact-cta-inner { text-align: center; max-width: 560px; margin: 0 auto; position: relative; z-index: 1; }
+  .contact-cta h2 { color: var(--white); font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 12px; }
+  .contact-cta p { color: rgba(255,255,255,0.75); margin-bottom: 28px; }
+  .btn-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .btn-ghost-light { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.5); font-weight: 700; }
+  .btn-ghost-light:hover { background: rgba(255,255,255,0.1); color: var(--white); }
+
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  .reveal--delay { transition-delay: 0.15s; }
+
+  @media (max-width: 880px) {
+    .contact-inner { grid-template-columns: 1fr; }
+    .editorial-row { grid-template-columns: 1fr; }
+    .steps-grid { flex-direction: column; align-items: stretch; }
+    .step-arrow { transform: rotate(90deg); text-align: center; }
+    .form-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(
+    (entries) => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); observer.unobserve(e.target); } }),
+    { threshold: 0.1 }
+  );
+  reveals.forEach(el => observer.observe(el));
+</script>
