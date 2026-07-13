@@ -4,7 +4,7 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout
   title="Careers"
-  description="Join the Alved Services team. We are hiring Direct Support Professionals who care about making a real difference in the lives of adults with intellectual and developmental disabilities."
+  description="Join the Alved Services team. We are hiring Direct Support Professionals who care about making a real difference in the lives of adults with developmental disabilities."
 >
 
   <!-- PAGE HERO -->
@@ -12,7 +12,7 @@ import Layout from '../layouts/Layout.astro';
     <div class="wrap page-hero-inner reveal">
       <span class="eyebrow">Careers</span>
       <h1>Make a difference every day.</h1>
-      <p class="lead">At Alved Services, our Direct Support Professionals are the heart of everything we do. If you care about helping adults with intellectual and developmental disabilities live meaningful, independent lives, we want to hear from you.</p>
+      <p class="lead">At Alved Services, our Direct Support Professionals are the heart of everything we do. If you care about helping adults with developmental disabilities live meaningful, independent lives, we want to hear from you.</p>
       <a href="#apply" class="btn btn-gold">Press here to Apply Now</a>
     </div>
   </section>
@@ -35,7 +35,7 @@ import Layout from '../layouts/Layout.astro';
         <article class="why-card reveal reveal--delay" role="listitem">
           <div class="why-icon" aria-hidden="true">📚</div>
           <h3>Training & Support</h3>
-          <p>We provide thorough onboarding, ongoing training, and the support you need to do your job well and grow in your role.</p>
+          <p>We provide onboarding, ongoing training, and the support you need to do your job well and grow in your role.</p>
         </article>
         <article class="why-card reveal reveal--delay-2" role="listitem">
           <div class="why-icon" aria-hidden="true">🤝</div>
@@ -45,7 +45,7 @@ import Layout from '../layouts/Layout.astro';
         <article class="why-card reveal reveal--delay-3" role="listitem">
           <div class="why-icon" aria-hidden="true">📅</div>
           <h3>Flexible Scheduling</h3>
-          <p>We offer both full-time and part-time positions with scheduling that works around your life, not just ours.</p>
+          <p>We offer both full-time and part-time positions with scheduling that works around your life, as much as possible.</p>
         </article>
       </div>
     </div>
@@ -88,7 +88,7 @@ import Layout from '../layouts/Layout.astro';
       <div class="section-head reveal">
         <span class="eyebrow">Open Positions</span>
         <h2 id="positions-heading">We are currently hiring</h2>
-        <p>All positions work directly with adults with intellectual and developmental disabilities across Marion County.</p>
+        <p>All positions work directly with adults with developmental disabilities across Marion County.</p>
       </div>
 
       <div class="positions-list reveal" role="list">
@@ -122,7 +122,7 @@ import Layout from '../layouts/Layout.astro';
 
               <div class="jd-section">
                 <h4>What You Will Do</h4>
-                <p>As a DSP, you will support adults with intellectual and developmental disabilities in the following areas:</p>
+                <p>As a DSP, you will support adults with developmental disabilities in the following areas:</p>
                 <div class="jd-grid">
                   <div class="jd-group">
                     <h5>Personal Care</h5>
@@ -385,6 +385,20 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
+  <!-- FAMILY CAREGIVER CALLOUT -->
+<section class="family-callout" aria-labelledby="family-callout-heading">
+  <div class="wrap family-callout-inner reveal">
+    <div class="family-callout-text">
+      <span class="eyebrow">For Families</span>
+      <h2 id="family-callout-heading">Get paid to care for your loved one</h2>
+      <p>No one knows your loved one better than you. If you are already providing care, you may be able to get paid to do what you do best through Alved Services.</p>
+      <p>We also welcome trusted family members and friends to join our caregiving team, helping provide familiar, compassionate care to the individuals who matter most.</p>
+      <p>Contact us today to learn if you or someone you trust may qualify to become a paid caregiver.</p>
+      <a href="/contact" class="btn btn-gold">Press here to Contact Us</a>
+    </div>
+  </div>
+</section>
+
   <!-- CTA -->
   <section class="careers-cta" aria-label="Questions about careers">
     <div class="cta-bg-shape" aria-hidden="true"></div>
@@ -497,6 +511,12 @@ import Layout from '../layouts/Layout.astro';
   .reveal--delay-2 { transition-delay: 0.3s; }
   .reveal--delay-3 { transition-delay: 0.45s; }
 
+.family-callout { background: var(--navy); padding: 72px 0; }
+.family-callout-inner { max-width: 640px; }
+.family-callout-text .eyebrow { color: var(--gold-soft); }
+.family-callout-text h2 { color: var(--white); font-size: clamp(1.5rem, 2.5vw, 2rem); margin-bottom: 16px; }
+.family-callout-text p { color: rgba(255,255,255,0.78); line-height: 1.75; margin-bottom: 14px; }
+.family-callout-text .btn-gold { margin-top: 10px; display: inline-block; }
   @media (max-width: 880px) {
     .why-grid { grid-template-columns: 1fr 1fr; }
     .editorial-row { grid-template-columns: 1fr; }

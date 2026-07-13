@@ -12,7 +12,7 @@ import Layout from '../layouts/Layout.astro';
     <div class="wrap page-hero-inner reveal">
       <span class="eyebrow">Our Services</span>
       <h1>Support built around you</h1>
-      <p class="lead">Alved Services is a residential services provider offering individualized support for adults with intellectual and developmental disabilities in Marion County. Every service is planned together with you, your family, and your support team.</p>
+      <p class="lead">Alved Services is a residential services provider offering individualized support for adults with developmental disabilities in Marion County. Every service is planned together with you, your family, and your support team.</p>
     </div>
   </section>
 
@@ -85,6 +85,44 @@ import Layout from '../layouts/Layout.astro';
         </article>
 
       </div>
+    </div>
+  </section>
+    <!-- WHERE YOU LIVE SECTION -->
+  <section class="living-section" aria-labelledby="living-heading">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Where You Live</span>
+        <h2 id="living-heading">Everyone's living situation is different — and that's okay</h2>
+        <p>Whether you live with your family, on your own, or with roommates, Alved Services can provide support that fits your life.</p>
+      </div>
+      <div class="living-grid reveal">
+
+        <div class="living-card">
+          <div class="living-icon" aria-hidden="true">👨‍👩‍👧</div>
+          <h3>Living with family</h3>
+          <p>If your family members work during the day, we can be there to support you while they are away through the <strong>Participant Assistance and Care (PAC) Waiver</strong>.</p>
+        </div>
+
+        <div class="living-card">
+          <div class="living-icon" aria-hidden="true">🏠</div>
+          <h3>Living on your own or with roommates</h3>
+          <p>We provide <strong>Residential Habilitation and Support</strong> in your home to help you build daily living skills and become more independent.</p>
+        </div>
+
+        <div class="living-card">
+          <div class="living-icon" aria-hidden="true">☕</div>
+          <h3>When your caregiver needs a break</h3>
+          <p>We offer <strong>Respite services</strong> so your caregiver can rest — whether that is for a few hours, overnight, or a full weekend.</p>
+        </div>
+
+        <div class="living-card">
+          <div class="living-icon" aria-hidden="true">🔑</div>
+          <h3>Ready to move into your own home</h3>
+          <p>If you want to leave a long-term living facility and move into your own place, we can help you plan and make that transition on your terms.</p>
+        </div>
+
+      </div>
+      <p class="living-footer reveal">You choose where and how you want to live. We are here to support your goals.</p>
     </div>
   </section>
 
@@ -333,6 +371,18 @@ import Layout from '../layouts/Layout.astro';
   .reveal.in { opacity: 1; transform: none; }
   .reveal--delay  { transition-delay: 0.15s; }
   .reveal--delay-2 { transition-delay: 0.3s; }
+
+  .living-section { padding: var(--section-pad) 0; background: var(--white); }
+  .living-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 28px; }
+  .living-card { background: var(--bg-alt); border: 1px solid var(--border); border-top: 4px solid var(--gold); border-radius: var(--radius); padding: 28px 22px; }
+  .living-icon { font-size: 1.8rem; margin-bottom: 12px; }
+  .living-card h3 { font-family: var(--font-head); font-size: 1rem; color: var(--navy); margin-bottom: 10px; }
+  .living-card p { font-size: 0.9rem; color: var(--ink-soft); line-height: 1.65; }
+  .living-card strong { color: var(--navy); font-weight: 700; }
+  .living-footer { text-align: center; font-size: 1rem; color: var(--ink); font-weight: 600; font-family: var(--font-head); }
+
+@media (max-width: 880px) { .living-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 540px) { .living-grid { grid-template-columns: 1fr; } }
 
   @media (max-width: 880px) {
     .services-grid { grid-template-columns: 1fr; }
